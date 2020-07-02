@@ -22,128 +22,74 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Btn1_1 = New System.Windows.Forms.Button()
-        Me.Btn1_2 = New System.Windows.Forms.Button()
-        Me.Btn2_2 = New System.Windows.Forms.Button()
-        Me.Btn2_1 = New System.Windows.Forms.Button()
-        Me.Btn2_3 = New System.Windows.Forms.Button()
-        Me.Btn1_3 = New System.Windows.Forms.Button()
-        Me.Btn3_3 = New System.Windows.Forms.Button()
-        Me.Btn3_2 = New System.Windows.Forms.Button()
-        Me.Btn3_1 = New System.Windows.Forms.Button()
-        Me.Btn3_5 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Btn3_4 = New System.Windows.Forms.Button()
         Me.Btn2_5 = New System.Windows.Forms.Button()
+        Me.Btn3_5 = New System.Windows.Forms.Button()
         Me.Btn2_4 = New System.Windows.Forms.Button()
-        Me.Btn1_5 = New System.Windows.Forms.Button()
-        Me.Btn1_4 = New System.Windows.Forms.Button()
-        Me.Btn5_5 = New System.Windows.Forms.Button()
-        Me.Btn5_4 = New System.Windows.Forms.Button()
-        Me.Btn4_5 = New System.Windows.Forms.Button()
-        Me.Btn4_4 = New System.Windows.Forms.Button()
-        Me.Btn5_3 = New System.Windows.Forms.Button()
-        Me.Btn5_2 = New System.Windows.Forms.Button()
-        Me.Btn5_1 = New System.Windows.Forms.Button()
-        Me.Btn4_3 = New System.Windows.Forms.Button()
-        Me.Btn4_2 = New System.Windows.Forms.Button()
         Me.Btn4_1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ListBox = New System.Windows.Forms.ListBox()
+        Me.Btn1_5 = New System.Windows.Forms.Button()
+        Me.Btn4_2 = New System.Windows.Forms.Button()
+        Me.Btn1_4 = New System.Windows.Forms.Button()
+        Me.Btn4_3 = New System.Windows.Forms.Button()
+        Me.Btn3_3 = New System.Windows.Forms.Button()
+        Me.Btn5_1 = New System.Windows.Forms.Button()
+        Me.Btn3_2 = New System.Windows.Forms.Button()
+        Me.Btn5_2 = New System.Windows.Forms.Button()
+        Me.Btn3_1 = New System.Windows.Forms.Button()
+        Me.Btn5_3 = New System.Windows.Forms.Button()
+        Me.Btn2_3 = New System.Windows.Forms.Button()
+        Me.Btn4_4 = New System.Windows.Forms.Button()
+        Me.Btn1_3 = New System.Windows.Forms.Button()
+        Me.Btn4_5 = New System.Windows.Forms.Button()
+        Me.Btn2_2 = New System.Windows.Forms.Button()
+        Me.Btn5_4 = New System.Windows.Forms.Button()
+        Me.Btn2_1 = New System.Windows.Forms.Button()
+        Me.Btn5_5 = New System.Windows.Forms.Button()
+        Me.Btn1_2 = New System.Windows.Forms.Button()
+        Me.Btn1_1 = New System.Windows.Forms.Button()
+        Me.Btn0_1 = New System.Windows.Forms.Button()
+        Me.Btn0_2 = New System.Windows.Forms.Button()
+        Me.Btn0_3 = New System.Windows.Forms.Button()
+        Me.Btn0_4 = New System.Windows.Forms.Button()
+        Me.Btn0_5 = New System.Windows.Forms.Button()
+        Me.Btn0_6 = New System.Windows.Forms.Button()
+        Me.Btn1_6 = New System.Windows.Forms.Button()
+        Me.Btn2_6 = New System.Windows.Forms.Button()
+        Me.Btn3_6 = New System.Windows.Forms.Button()
+        Me.Btn4_6 = New System.Windows.Forms.Button()
+        Me.Btn5_6 = New System.Windows.Forms.Button()
+        Me.Btn6_6 = New System.Windows.Forms.Button()
+        Me.Btn6_1 = New System.Windows.Forms.Button()
+        Me.Btn6_2 = New System.Windows.Forms.Button()
+        Me.Btn6_3 = New System.Windows.Forms.Button()
+        Me.Btn6_4 = New System.Windows.Forms.Button()
+        Me.Btn6_5 = New System.Windows.Forms.Button()
+        Me.Btn0_0 = New System.Windows.Forms.Button()
+        Me.Btn1_0 = New System.Windows.Forms.Button()
+        Me.Btn2_0 = New System.Windows.Forms.Button()
+        Me.Btn3_0 = New System.Windows.Forms.Button()
+        Me.Btn4_0 = New System.Windows.Forms.Button()
+        Me.Btn5_0 = New System.Windows.Forms.Button()
+        Me.Btn6_0 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Btn1_1
+        'Label1
         '
-        Me.Btn1_1.Location = New System.Drawing.Point(59, 86)
-        Me.Btn1_1.Name = "Btn1_1"
-        Me.Btn1_1.Size = New System.Drawing.Size(40, 40)
-        Me.Btn1_1.TabIndex = 0
-        Me.Btn1_1.Text = " "
-        Me.Btn1_1.UseVisualStyleBackColor = True
-        '
-        'Btn1_2
-        '
-        Me.Btn1_2.Location = New System.Drawing.Point(106, 86)
-        Me.Btn1_2.Name = "Btn1_2"
-        Me.Btn1_2.Size = New System.Drawing.Size(40, 40)
-        Me.Btn1_2.TabIndex = 1
-        Me.Btn1_2.Text = " "
-        Me.Btn1_2.UseVisualStyleBackColor = True
-        '
-        'Btn2_2
-        '
-        Me.Btn2_2.Location = New System.Drawing.Point(106, 132)
-        Me.Btn2_2.Name = "Btn2_2"
-        Me.Btn2_2.Size = New System.Drawing.Size(40, 40)
-        Me.Btn2_2.TabIndex = 3
-        Me.Btn2_2.Text = " "
-        Me.Btn2_2.UseVisualStyleBackColor = True
-        '
-        'Btn2_1
-        '
-        Me.Btn2_1.Location = New System.Drawing.Point(60, 132)
-        Me.Btn2_1.Name = "Btn2_1"
-        Me.Btn2_1.Size = New System.Drawing.Size(40, 40)
-        Me.Btn2_1.TabIndex = 2
-        Me.Btn2_1.Text = " "
-        Me.Btn2_1.UseVisualStyleBackColor = True
-        '
-        'Btn2_3
-        '
-        Me.Btn2_3.Location = New System.Drawing.Point(152, 132)
-        Me.Btn2_3.Name = "Btn2_3"
-        Me.Btn2_3.Size = New System.Drawing.Size(40, 40)
-        Me.Btn2_3.TabIndex = 5
-        Me.Btn2_3.Text = " "
-        Me.Btn2_3.UseVisualStyleBackColor = True
-        '
-        'Btn1_3
-        '
-        Me.Btn1_3.Location = New System.Drawing.Point(152, 86)
-        Me.Btn1_3.Name = "Btn1_3"
-        Me.Btn1_3.Size = New System.Drawing.Size(40, 40)
-        Me.Btn1_3.TabIndex = 4
-        Me.Btn1_3.Text = " "
-        Me.Btn1_3.UseVisualStyleBackColor = True
-        '
-        'Btn3_3
-        '
-        Me.Btn3_3.Location = New System.Drawing.Point(152, 178)
-        Me.Btn3_3.Name = "Btn3_3"
-        Me.Btn3_3.Size = New System.Drawing.Size(40, 40)
-        Me.Btn3_3.TabIndex = 8
-        Me.Btn3_3.Text = " "
-        Me.Btn3_3.UseVisualStyleBackColor = True
-        '
-        'Btn3_2
-        '
-        Me.Btn3_2.Location = New System.Drawing.Point(106, 178)
-        Me.Btn3_2.Name = "Btn3_2"
-        Me.Btn3_2.Size = New System.Drawing.Size(40, 40)
-        Me.Btn3_2.TabIndex = 7
-        Me.Btn3_2.Text = " "
-        Me.Btn3_2.UseVisualStyleBackColor = True
-        '
-        'Btn3_1
-        '
-        Me.Btn3_1.Location = New System.Drawing.Point(60, 178)
-        Me.Btn3_1.Name = "Btn3_1"
-        Me.Btn3_1.Size = New System.Drawing.Size(40, 40)
-        Me.Btn3_1.TabIndex = 6
-        Me.Btn3_1.Text = " "
-        Me.Btn3_1.UseVisualStyleBackColor = True
-        '
-        'Btn3_5
-        '
-        Me.Btn3_5.Location = New System.Drawing.Point(244, 178)
-        Me.Btn3_5.Name = "Btn3_5"
-        Me.Btn3_5.Size = New System.Drawing.Size(40, 40)
-        Me.Btn3_5.TabIndex = 14
-        Me.Btn3_5.Text = " "
-        Me.Btn3_5.UseVisualStyleBackColor = True
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(214, 29)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(91, 38)
+        Me.Label1.TabIndex = 25
+        Me.Label1.Text = "Facil"
         '
         'Btn3_4
         '
-        Me.Btn3_4.Location = New System.Drawing.Point(198, 178)
+        Me.Btn3_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_4.Location = New System.Drawing.Point(244, 198)
         Me.Btn3_4.Name = "Btn3_4"
         Me.Btn3_4.Size = New System.Drawing.Size(40, 40)
         Me.Btn3_4.TabIndex = 13
@@ -152,213 +98,603 @@ Partial Class Form1
         '
         'Btn2_5
         '
-        Me.Btn2_5.Location = New System.Drawing.Point(244, 132)
+        Me.Btn2_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_5.Location = New System.Drawing.Point(290, 152)
         Me.Btn2_5.Name = "Btn2_5"
         Me.Btn2_5.Size = New System.Drawing.Size(40, 40)
         Me.Btn2_5.TabIndex = 12
         Me.Btn2_5.Text = " "
         Me.Btn2_5.UseVisualStyleBackColor = True
         '
+        'Btn3_5
+        '
+        Me.Btn3_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_5.Location = New System.Drawing.Point(290, 198)
+        Me.Btn3_5.Name = "Btn3_5"
+        Me.Btn3_5.Size = New System.Drawing.Size(40, 40)
+        Me.Btn3_5.TabIndex = 14
+        Me.Btn3_5.Text = " "
+        Me.Btn3_5.UseVisualStyleBackColor = True
+        '
         'Btn2_4
         '
-        Me.Btn2_4.Location = New System.Drawing.Point(198, 132)
+        Me.Btn2_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_4.Location = New System.Drawing.Point(244, 152)
         Me.Btn2_4.Name = "Btn2_4"
         Me.Btn2_4.Size = New System.Drawing.Size(40, 40)
         Me.Btn2_4.TabIndex = 11
         Me.Btn2_4.Text = " "
         Me.Btn2_4.UseVisualStyleBackColor = True
         '
-        'Btn1_5
-        '
-        Me.Btn1_5.Location = New System.Drawing.Point(244, 86)
-        Me.Btn1_5.Name = "Btn1_5"
-        Me.Btn1_5.Size = New System.Drawing.Size(40, 40)
-        Me.Btn1_5.TabIndex = 10
-        Me.Btn1_5.Text = " "
-        Me.Btn1_5.UseVisualStyleBackColor = True
-        '
-        'Btn1_4
-        '
-        Me.Btn1_4.Location = New System.Drawing.Point(198, 86)
-        Me.Btn1_4.Name = "Btn1_4"
-        Me.Btn1_4.Size = New System.Drawing.Size(40, 40)
-        Me.Btn1_4.TabIndex = 9
-        Me.Btn1_4.Text = " "
-        Me.Btn1_4.UseVisualStyleBackColor = True
-        '
-        'Btn5_5
-        '
-        Me.Btn5_5.Location = New System.Drawing.Point(244, 270)
-        Me.Btn5_5.Name = "Btn5_5"
-        Me.Btn5_5.Size = New System.Drawing.Size(40, 40)
-        Me.Btn5_5.TabIndex = 24
-        Me.Btn5_5.Text = " "
-        Me.Btn5_5.UseVisualStyleBackColor = True
-        '
-        'Btn5_4
-        '
-        Me.Btn5_4.Location = New System.Drawing.Point(198, 270)
-        Me.Btn5_4.Name = "Btn5_4"
-        Me.Btn5_4.Size = New System.Drawing.Size(40, 40)
-        Me.Btn5_4.TabIndex = 23
-        Me.Btn5_4.Text = " "
-        Me.Btn5_4.UseVisualStyleBackColor = True
-        '
-        'Btn4_5
-        '
-        Me.Btn4_5.Location = New System.Drawing.Point(244, 224)
-        Me.Btn4_5.Name = "Btn4_5"
-        Me.Btn4_5.Size = New System.Drawing.Size(40, 40)
-        Me.Btn4_5.TabIndex = 22
-        Me.Btn4_5.Text = " "
-        Me.Btn4_5.UseVisualStyleBackColor = True
-        '
-        'Btn4_4
-        '
-        Me.Btn4_4.Location = New System.Drawing.Point(198, 224)
-        Me.Btn4_4.Name = "Btn4_4"
-        Me.Btn4_4.Size = New System.Drawing.Size(40, 40)
-        Me.Btn4_4.TabIndex = 21
-        Me.Btn4_4.Text = " "
-        Me.Btn4_4.UseVisualStyleBackColor = True
-        '
-        'Btn5_3
-        '
-        Me.Btn5_3.Location = New System.Drawing.Point(152, 270)
-        Me.Btn5_3.Name = "Btn5_3"
-        Me.Btn5_3.Size = New System.Drawing.Size(40, 40)
-        Me.Btn5_3.TabIndex = 20
-        Me.Btn5_3.Text = " "
-        Me.Btn5_3.UseVisualStyleBackColor = True
-        '
-        'Btn5_2
-        '
-        Me.Btn5_2.Location = New System.Drawing.Point(106, 270)
-        Me.Btn5_2.Name = "Btn5_2"
-        Me.Btn5_2.Size = New System.Drawing.Size(40, 40)
-        Me.Btn5_2.TabIndex = 19
-        Me.Btn5_2.Text = " "
-        Me.Btn5_2.UseVisualStyleBackColor = True
-        '
-        'Btn5_1
-        '
-        Me.Btn5_1.Location = New System.Drawing.Point(60, 270)
-        Me.Btn5_1.Name = "Btn5_1"
-        Me.Btn5_1.Size = New System.Drawing.Size(40, 40)
-        Me.Btn5_1.TabIndex = 18
-        Me.Btn5_1.Text = " "
-        Me.Btn5_1.UseVisualStyleBackColor = True
-        '
-        'Btn4_3
-        '
-        Me.Btn4_3.Location = New System.Drawing.Point(152, 224)
-        Me.Btn4_3.Name = "Btn4_3"
-        Me.Btn4_3.Size = New System.Drawing.Size(40, 40)
-        Me.Btn4_3.TabIndex = 17
-        Me.Btn4_3.Text = " "
-        Me.Btn4_3.UseVisualStyleBackColor = True
-        '
-        'Btn4_2
-        '
-        Me.Btn4_2.Location = New System.Drawing.Point(106, 224)
-        Me.Btn4_2.Name = "Btn4_2"
-        Me.Btn4_2.Size = New System.Drawing.Size(40, 40)
-        Me.Btn4_2.TabIndex = 16
-        Me.Btn4_2.Text = " "
-        Me.Btn4_2.UseVisualStyleBackColor = True
-        '
         'Btn4_1
         '
-        Me.Btn4_1.Location = New System.Drawing.Point(60, 224)
+        Me.Btn4_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_1.Location = New System.Drawing.Point(106, 244)
         Me.Btn4_1.Name = "Btn4_1"
         Me.Btn4_1.Size = New System.Drawing.Size(40, 40)
         Me.Btn4_1.TabIndex = 15
         Me.Btn4_1.Text = " "
         Me.Btn4_1.UseVisualStyleBackColor = True
         '
-        'Label1
+        'Btn1_5
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(99, 27)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(91, 38)
-        Me.Label1.TabIndex = 25
-        Me.Label1.Text = "Facil"
+        Me.Btn1_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_5.Location = New System.Drawing.Point(290, 106)
+        Me.Btn1_5.Name = "Btn1_5"
+        Me.Btn1_5.Size = New System.Drawing.Size(40, 40)
+        Me.Btn1_5.TabIndex = 10
+        Me.Btn1_5.Text = " "
+        Me.Btn1_5.UseVisualStyleBackColor = True
         '
-        'ListBox
+        'Btn4_2
         '
-        Me.ListBox.FormattingEnabled = True
-        Me.ListBox.ItemHeight = 16
-        Me.ListBox.Location = New System.Drawing.Point(440, 57)
-        Me.ListBox.Name = "ListBox"
-        Me.ListBox.Size = New System.Drawing.Size(369, 308)
-        Me.ListBox.TabIndex = 26
+        Me.Btn4_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_2.Location = New System.Drawing.Point(152, 244)
+        Me.Btn4_2.Name = "Btn4_2"
+        Me.Btn4_2.Size = New System.Drawing.Size(40, 40)
+        Me.Btn4_2.TabIndex = 16
+        Me.Btn4_2.Text = " "
+        Me.Btn4_2.UseVisualStyleBackColor = True
+        '
+        'Btn1_4
+        '
+        Me.Btn1_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_4.Location = New System.Drawing.Point(244, 106)
+        Me.Btn1_4.Name = "Btn1_4"
+        Me.Btn1_4.Size = New System.Drawing.Size(40, 40)
+        Me.Btn1_4.TabIndex = 9
+        Me.Btn1_4.Text = " "
+        Me.Btn1_4.UseVisualStyleBackColor = True
+        '
+        'Btn4_3
+        '
+        Me.Btn4_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_3.Location = New System.Drawing.Point(198, 244)
+        Me.Btn4_3.Name = "Btn4_3"
+        Me.Btn4_3.Size = New System.Drawing.Size(40, 40)
+        Me.Btn4_3.TabIndex = 17
+        Me.Btn4_3.Text = " "
+        Me.Btn4_3.UseVisualStyleBackColor = True
+        '
+        'Btn3_3
+        '
+        Me.Btn3_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_3.Location = New System.Drawing.Point(198, 198)
+        Me.Btn3_3.Name = "Btn3_3"
+        Me.Btn3_3.Size = New System.Drawing.Size(40, 40)
+        Me.Btn3_3.TabIndex = 8
+        Me.Btn3_3.Text = " "
+        Me.Btn3_3.UseVisualStyleBackColor = True
+        '
+        'Btn5_1
+        '
+        Me.Btn5_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_1.Location = New System.Drawing.Point(106, 290)
+        Me.Btn5_1.Name = "Btn5_1"
+        Me.Btn5_1.Size = New System.Drawing.Size(40, 40)
+        Me.Btn5_1.TabIndex = 18
+        Me.Btn5_1.Text = " "
+        Me.Btn5_1.UseVisualStyleBackColor = True
+        '
+        'Btn3_2
+        '
+        Me.Btn3_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_2.Location = New System.Drawing.Point(152, 198)
+        Me.Btn3_2.Name = "Btn3_2"
+        Me.Btn3_2.Size = New System.Drawing.Size(40, 40)
+        Me.Btn3_2.TabIndex = 7
+        Me.Btn3_2.Text = " "
+        Me.Btn3_2.UseVisualStyleBackColor = True
+        '
+        'Btn5_2
+        '
+        Me.Btn5_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_2.Location = New System.Drawing.Point(152, 290)
+        Me.Btn5_2.Name = "Btn5_2"
+        Me.Btn5_2.Size = New System.Drawing.Size(40, 40)
+        Me.Btn5_2.TabIndex = 19
+        Me.Btn5_2.Text = " "
+        Me.Btn5_2.UseVisualStyleBackColor = True
+        '
+        'Btn3_1
+        '
+        Me.Btn3_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_1.Location = New System.Drawing.Point(106, 198)
+        Me.Btn3_1.Name = "Btn3_1"
+        Me.Btn3_1.Size = New System.Drawing.Size(40, 40)
+        Me.Btn3_1.TabIndex = 6
+        Me.Btn3_1.Text = " "
+        Me.Btn3_1.UseVisualStyleBackColor = True
+        '
+        'Btn5_3
+        '
+        Me.Btn5_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_3.Location = New System.Drawing.Point(198, 290)
+        Me.Btn5_3.Name = "Btn5_3"
+        Me.Btn5_3.Size = New System.Drawing.Size(40, 40)
+        Me.Btn5_3.TabIndex = 20
+        Me.Btn5_3.Text = " "
+        Me.Btn5_3.UseVisualStyleBackColor = True
+        '
+        'Btn2_3
+        '
+        Me.Btn2_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_3.Location = New System.Drawing.Point(198, 152)
+        Me.Btn2_3.Name = "Btn2_3"
+        Me.Btn2_3.Size = New System.Drawing.Size(40, 40)
+        Me.Btn2_3.TabIndex = 5
+        Me.Btn2_3.Text = " "
+        Me.Btn2_3.UseVisualStyleBackColor = True
+        '
+        'Btn4_4
+        '
+        Me.Btn4_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_4.Location = New System.Drawing.Point(244, 244)
+        Me.Btn4_4.Name = "Btn4_4"
+        Me.Btn4_4.Size = New System.Drawing.Size(40, 40)
+        Me.Btn4_4.TabIndex = 21
+        Me.Btn4_4.Text = " "
+        Me.Btn4_4.UseVisualStyleBackColor = True
+        '
+        'Btn1_3
+        '
+        Me.Btn1_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_3.Location = New System.Drawing.Point(198, 106)
+        Me.Btn1_3.Name = "Btn1_3"
+        Me.Btn1_3.Size = New System.Drawing.Size(40, 40)
+        Me.Btn1_3.TabIndex = 4
+        Me.Btn1_3.Text = " "
+        Me.Btn1_3.UseVisualStyleBackColor = True
+        '
+        'Btn4_5
+        '
+        Me.Btn4_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_5.Location = New System.Drawing.Point(290, 244)
+        Me.Btn4_5.Name = "Btn4_5"
+        Me.Btn4_5.Size = New System.Drawing.Size(40, 40)
+        Me.Btn4_5.TabIndex = 22
+        Me.Btn4_5.Text = " "
+        Me.Btn4_5.UseVisualStyleBackColor = True
+        '
+        'Btn2_2
+        '
+        Me.Btn2_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_2.Location = New System.Drawing.Point(152, 152)
+        Me.Btn2_2.Name = "Btn2_2"
+        Me.Btn2_2.Size = New System.Drawing.Size(40, 40)
+        Me.Btn2_2.TabIndex = 3
+        Me.Btn2_2.Text = " "
+        Me.Btn2_2.UseVisualStyleBackColor = True
+        '
+        'Btn5_4
+        '
+        Me.Btn5_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_4.Location = New System.Drawing.Point(244, 290)
+        Me.Btn5_4.Name = "Btn5_4"
+        Me.Btn5_4.Size = New System.Drawing.Size(40, 40)
+        Me.Btn5_4.TabIndex = 23
+        Me.Btn5_4.Text = " "
+        Me.Btn5_4.UseVisualStyleBackColor = True
+        '
+        'Btn2_1
+        '
+        Me.Btn2_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_1.Location = New System.Drawing.Point(106, 152)
+        Me.Btn2_1.Name = "Btn2_1"
+        Me.Btn2_1.Size = New System.Drawing.Size(40, 40)
+        Me.Btn2_1.TabIndex = 2
+        Me.Btn2_1.Text = " "
+        Me.Btn2_1.UseVisualStyleBackColor = True
+        '
+        'Btn5_5
+        '
+        Me.Btn5_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_5.Location = New System.Drawing.Point(290, 290)
+        Me.Btn5_5.Name = "Btn5_5"
+        Me.Btn5_5.Size = New System.Drawing.Size(40, 40)
+        Me.Btn5_5.TabIndex = 24
+        Me.Btn5_5.Text = " "
+        Me.Btn5_5.UseVisualStyleBackColor = True
+        '
+        'Btn1_2
+        '
+        Me.Btn1_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_2.Location = New System.Drawing.Point(152, 106)
+        Me.Btn1_2.Name = "Btn1_2"
+        Me.Btn1_2.Size = New System.Drawing.Size(40, 40)
+        Me.Btn1_2.TabIndex = 1
+        Me.Btn1_2.Text = " "
+        Me.Btn1_2.UseVisualStyleBackColor = True
+        '
+        'Btn1_1
+        '
+        Me.Btn1_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_1.Location = New System.Drawing.Point(105, 106)
+        Me.Btn1_1.Name = "Btn1_1"
+        Me.Btn1_1.Size = New System.Drawing.Size(40, 40)
+        Me.Btn1_1.TabIndex = 0
+        Me.Btn1_1.Text = " "
+        Me.Btn1_1.UseVisualStyleBackColor = True
+        '
+        'Btn0_1
+        '
+        Me.Btn0_1.Location = New System.Drawing.Point(105, 38)
+        Me.Btn0_1.Name = "Btn0_1"
+        Me.Btn0_1.Size = New System.Drawing.Size(40, 40)
+        Me.Btn0_1.TabIndex = 25
+        Me.Btn0_1.Text = " "
+        Me.Btn0_1.UseVisualStyleBackColor = True
+        Me.Btn0_1.Visible = False
+        '
+        'Btn0_2
+        '
+        Me.Btn0_2.Location = New System.Drawing.Point(152, 38)
+        Me.Btn0_2.Name = "Btn0_2"
+        Me.Btn0_2.Size = New System.Drawing.Size(40, 40)
+        Me.Btn0_2.TabIndex = 26
+        Me.Btn0_2.Text = " "
+        Me.Btn0_2.UseVisualStyleBackColor = True
+        Me.Btn0_2.Visible = False
+        '
+        'Btn0_3
+        '
+        Me.Btn0_3.Location = New System.Drawing.Point(198, 38)
+        Me.Btn0_3.Name = "Btn0_3"
+        Me.Btn0_3.Size = New System.Drawing.Size(40, 40)
+        Me.Btn0_3.TabIndex = 27
+        Me.Btn0_3.Text = " "
+        Me.Btn0_3.UseVisualStyleBackColor = True
+        Me.Btn0_3.Visible = False
+        '
+        'Btn0_4
+        '
+        Me.Btn0_4.Location = New System.Drawing.Point(245, 38)
+        Me.Btn0_4.Name = "Btn0_4"
+        Me.Btn0_4.Size = New System.Drawing.Size(40, 40)
+        Me.Btn0_4.TabIndex = 28
+        Me.Btn0_4.Text = " "
+        Me.Btn0_4.UseVisualStyleBackColor = True
+        Me.Btn0_4.Visible = False
+        '
+        'Btn0_5
+        '
+        Me.Btn0_5.Location = New System.Drawing.Point(290, 38)
+        Me.Btn0_5.Name = "Btn0_5"
+        Me.Btn0_5.Size = New System.Drawing.Size(40, 40)
+        Me.Btn0_5.TabIndex = 29
+        Me.Btn0_5.Text = " "
+        Me.Btn0_5.UseVisualStyleBackColor = True
+        Me.Btn0_5.Visible = False
+        '
+        'Btn0_6
+        '
+        Me.Btn0_6.Location = New System.Drawing.Point(352, 38)
+        Me.Btn0_6.Name = "Btn0_6"
+        Me.Btn0_6.Size = New System.Drawing.Size(40, 40)
+        Me.Btn0_6.TabIndex = 30
+        Me.Btn0_6.Text = " "
+        Me.Btn0_6.UseVisualStyleBackColor = True
+        Me.Btn0_6.Visible = False
+        '
+        'Btn1_6
+        '
+        Me.Btn1_6.Location = New System.Drawing.Point(352, 106)
+        Me.Btn1_6.Name = "Btn1_6"
+        Me.Btn1_6.Size = New System.Drawing.Size(40, 40)
+        Me.Btn1_6.TabIndex = 31
+        Me.Btn1_6.Text = " "
+        Me.Btn1_6.UseVisualStyleBackColor = True
+        Me.Btn1_6.Visible = False
+        '
+        'Btn2_6
+        '
+        Me.Btn2_6.Location = New System.Drawing.Point(352, 152)
+        Me.Btn2_6.Name = "Btn2_6"
+        Me.Btn2_6.Size = New System.Drawing.Size(40, 40)
+        Me.Btn2_6.TabIndex = 32
+        Me.Btn2_6.Text = " "
+        Me.Btn2_6.UseVisualStyleBackColor = True
+        Me.Btn2_6.Visible = False
+        '
+        'Btn3_6
+        '
+        Me.Btn3_6.Location = New System.Drawing.Point(352, 198)
+        Me.Btn3_6.Name = "Btn3_6"
+        Me.Btn3_6.Size = New System.Drawing.Size(40, 40)
+        Me.Btn3_6.TabIndex = 33
+        Me.Btn3_6.Text = " "
+        Me.Btn3_6.UseVisualStyleBackColor = True
+        Me.Btn3_6.Visible = False
+        '
+        'Btn4_6
+        '
+        Me.Btn4_6.Location = New System.Drawing.Point(352, 244)
+        Me.Btn4_6.Name = "Btn4_6"
+        Me.Btn4_6.Size = New System.Drawing.Size(40, 40)
+        Me.Btn4_6.TabIndex = 34
+        Me.Btn4_6.Text = " "
+        Me.Btn4_6.UseVisualStyleBackColor = True
+        Me.Btn4_6.Visible = False
+        '
+        'Btn5_6
+        '
+        Me.Btn5_6.Location = New System.Drawing.Point(352, 290)
+        Me.Btn5_6.Name = "Btn5_6"
+        Me.Btn5_6.Size = New System.Drawing.Size(40, 40)
+        Me.Btn5_6.TabIndex = 35
+        Me.Btn5_6.Text = " "
+        Me.Btn5_6.UseVisualStyleBackColor = True
+        Me.Btn5_6.Visible = False
+        '
+        'Btn6_6
+        '
+        Me.Btn6_6.Location = New System.Drawing.Point(352, 352)
+        Me.Btn6_6.Name = "Btn6_6"
+        Me.Btn6_6.Size = New System.Drawing.Size(40, 40)
+        Me.Btn6_6.TabIndex = 36
+        Me.Btn6_6.Text = " "
+        Me.Btn6_6.UseVisualStyleBackColor = True
+        Me.Btn6_6.Visible = False
+        '
+        'Btn6_1
+        '
+        Me.Btn6_1.Location = New System.Drawing.Point(105, 352)
+        Me.Btn6_1.Name = "Btn6_1"
+        Me.Btn6_1.Size = New System.Drawing.Size(40, 40)
+        Me.Btn6_1.TabIndex = 37
+        Me.Btn6_1.Text = " "
+        Me.Btn6_1.UseVisualStyleBackColor = True
+        Me.Btn6_1.Visible = False
+        '
+        'Btn6_2
+        '
+        Me.Btn6_2.Location = New System.Drawing.Point(152, 352)
+        Me.Btn6_2.Name = "Btn6_2"
+        Me.Btn6_2.Size = New System.Drawing.Size(40, 40)
+        Me.Btn6_2.TabIndex = 38
+        Me.Btn6_2.Text = " "
+        Me.Btn6_2.UseVisualStyleBackColor = True
+        Me.Btn6_2.Visible = False
+        '
+        'Btn6_3
+        '
+        Me.Btn6_3.Location = New System.Drawing.Point(198, 352)
+        Me.Btn6_3.Name = "Btn6_3"
+        Me.Btn6_3.Size = New System.Drawing.Size(40, 40)
+        Me.Btn6_3.TabIndex = 39
+        Me.Btn6_3.Text = " "
+        Me.Btn6_3.UseVisualStyleBackColor = True
+        Me.Btn6_3.Visible = False
+        '
+        'Btn6_4
+        '
+        Me.Btn6_4.Location = New System.Drawing.Point(245, 352)
+        Me.Btn6_4.Name = "Btn6_4"
+        Me.Btn6_4.Size = New System.Drawing.Size(40, 40)
+        Me.Btn6_4.TabIndex = 40
+        Me.Btn6_4.Text = " "
+        Me.Btn6_4.UseVisualStyleBackColor = True
+        Me.Btn6_4.Visible = False
+        '
+        'Btn6_5
+        '
+        Me.Btn6_5.Location = New System.Drawing.Point(290, 352)
+        Me.Btn6_5.Name = "Btn6_5"
+        Me.Btn6_5.Size = New System.Drawing.Size(40, 40)
+        Me.Btn6_5.TabIndex = 41
+        Me.Btn6_5.Text = " "
+        Me.Btn6_5.UseVisualStyleBackColor = True
+        Me.Btn6_5.Visible = False
+        '
+        'Btn0_0
+        '
+        Me.Btn0_0.Location = New System.Drawing.Point(45, 38)
+        Me.Btn0_0.Name = "Btn0_0"
+        Me.Btn0_0.Size = New System.Drawing.Size(40, 40)
+        Me.Btn0_0.TabIndex = 42
+        Me.Btn0_0.Text = " "
+        Me.Btn0_0.UseVisualStyleBackColor = True
+        Me.Btn0_0.Visible = False
+        '
+        'Btn1_0
+        '
+        Me.Btn1_0.Location = New System.Drawing.Point(45, 106)
+        Me.Btn1_0.Name = "Btn1_0"
+        Me.Btn1_0.Size = New System.Drawing.Size(40, 40)
+        Me.Btn1_0.TabIndex = 43
+        Me.Btn1_0.Text = " "
+        Me.Btn1_0.UseVisualStyleBackColor = True
+        Me.Btn1_0.Visible = False
+        '
+        'Btn2_0
+        '
+        Me.Btn2_0.Location = New System.Drawing.Point(45, 152)
+        Me.Btn2_0.Name = "Btn2_0"
+        Me.Btn2_0.Size = New System.Drawing.Size(40, 40)
+        Me.Btn2_0.TabIndex = 44
+        Me.Btn2_0.Text = " "
+        Me.Btn2_0.UseVisualStyleBackColor = True
+        Me.Btn2_0.Visible = False
+        '
+        'Btn3_0
+        '
+        Me.Btn3_0.Location = New System.Drawing.Point(45, 198)
+        Me.Btn3_0.Name = "Btn3_0"
+        Me.Btn3_0.Size = New System.Drawing.Size(40, 40)
+        Me.Btn3_0.TabIndex = 45
+        Me.Btn3_0.Text = " "
+        Me.Btn3_0.UseVisualStyleBackColor = True
+        Me.Btn3_0.Visible = False
+        '
+        'Btn4_0
+        '
+        Me.Btn4_0.Location = New System.Drawing.Point(45, 244)
+        Me.Btn4_0.Name = "Btn4_0"
+        Me.Btn4_0.Size = New System.Drawing.Size(40, 40)
+        Me.Btn4_0.TabIndex = 46
+        Me.Btn4_0.Text = " "
+        Me.Btn4_0.UseVisualStyleBackColor = True
+        Me.Btn4_0.Visible = False
+        '
+        'Btn5_0
+        '
+        Me.Btn5_0.Location = New System.Drawing.Point(45, 290)
+        Me.Btn5_0.Name = "Btn5_0"
+        Me.Btn5_0.Size = New System.Drawing.Size(40, 40)
+        Me.Btn5_0.TabIndex = 47
+        Me.Btn5_0.Text = " "
+        Me.Btn5_0.UseVisualStyleBackColor = True
+        Me.Btn5_0.Visible = False
+        '
+        'Btn6_0
+        '
+        Me.Btn6_0.Location = New System.Drawing.Point(45, 352)
+        Me.Btn6_0.Name = "Btn6_0"
+        Me.Btn6_0.Size = New System.Drawing.Size(40, 40)
+        Me.Btn6_0.TabIndex = 48
+        Me.Btn6_0.Text = " "
+        Me.Btn6_0.UseVisualStyleBackColor = True
+        Me.Btn6_0.Visible = False
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Btn6_0)
+        Me.Panel1.Controls.Add(Me.Btn5_0)
+        Me.Panel1.Controls.Add(Me.Btn4_0)
+        Me.Panel1.Controls.Add(Me.Btn3_0)
+        Me.Panel1.Controls.Add(Me.Btn2_0)
+        Me.Panel1.Controls.Add(Me.Btn1_0)
+        Me.Panel1.Controls.Add(Me.Btn0_0)
+        Me.Panel1.Controls.Add(Me.Btn6_5)
+        Me.Panel1.Controls.Add(Me.Btn6_4)
+        Me.Panel1.Controls.Add(Me.Btn6_3)
+        Me.Panel1.Controls.Add(Me.Btn6_2)
+        Me.Panel1.Controls.Add(Me.Btn6_1)
+        Me.Panel1.Controls.Add(Me.Btn6_6)
+        Me.Panel1.Controls.Add(Me.Btn5_6)
+        Me.Panel1.Controls.Add(Me.Btn4_6)
+        Me.Panel1.Controls.Add(Me.Btn3_6)
+        Me.Panel1.Controls.Add(Me.Btn2_6)
+        Me.Panel1.Controls.Add(Me.Btn1_6)
+        Me.Panel1.Controls.Add(Me.Btn0_6)
+        Me.Panel1.Controls.Add(Me.Btn0_5)
+        Me.Panel1.Controls.Add(Me.Btn0_4)
+        Me.Panel1.Controls.Add(Me.Btn0_3)
+        Me.Panel1.Controls.Add(Me.Btn0_2)
+        Me.Panel1.Controls.Add(Me.Btn0_1)
+        Me.Panel1.Controls.Add(Me.Btn1_1)
+        Me.Panel1.Controls.Add(Me.Btn1_2)
+        Me.Panel1.Controls.Add(Me.Btn5_5)
+        Me.Panel1.Controls.Add(Me.Btn2_1)
+        Me.Panel1.Controls.Add(Me.Btn5_4)
+        Me.Panel1.Controls.Add(Me.Btn2_2)
+        Me.Panel1.Controls.Add(Me.Btn4_5)
+        Me.Panel1.Controls.Add(Me.Btn1_3)
+        Me.Panel1.Controls.Add(Me.Btn4_4)
+        Me.Panel1.Controls.Add(Me.Btn2_3)
+        Me.Panel1.Controls.Add(Me.Btn5_3)
+        Me.Panel1.Controls.Add(Me.Btn3_1)
+        Me.Panel1.Controls.Add(Me.Btn5_2)
+        Me.Panel1.Controls.Add(Me.Btn3_2)
+        Me.Panel1.Controls.Add(Me.Btn5_1)
+        Me.Panel1.Controls.Add(Me.Btn3_3)
+        Me.Panel1.Controls.Add(Me.Btn4_3)
+        Me.Panel1.Controls.Add(Me.Btn1_4)
+        Me.Panel1.Controls.Add(Me.Btn4_2)
+        Me.Panel1.Controls.Add(Me.Btn1_5)
+        Me.Panel1.Controls.Add(Me.Btn4_1)
+        Me.Panel1.Controls.Add(Me.Btn2_4)
+        Me.Panel1.Controls.Add(Me.Btn3_5)
+        Me.Panel1.Controls.Add(Me.Btn2_5)
+        Me.Panel1.Controls.Add(Me.Btn3_4)
+        Me.Panel1.Location = New System.Drawing.Point(69, 86)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(447, 425)
+        Me.Panel1.TabIndex = 26
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(902, 529)
-        Me.Controls.Add(Me.ListBox)
+        Me.ClientSize = New System.Drawing.Size(666, 554)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Btn5_5)
-        Me.Controls.Add(Me.Btn5_4)
-        Me.Controls.Add(Me.Btn4_5)
-        Me.Controls.Add(Me.Btn4_4)
-        Me.Controls.Add(Me.Btn5_3)
-        Me.Controls.Add(Me.Btn5_2)
-        Me.Controls.Add(Me.Btn5_1)
-        Me.Controls.Add(Me.Btn4_3)
-        Me.Controls.Add(Me.Btn4_2)
-        Me.Controls.Add(Me.Btn4_1)
-        Me.Controls.Add(Me.Btn3_5)
-        Me.Controls.Add(Me.Btn3_4)
-        Me.Controls.Add(Me.Btn2_5)
-        Me.Controls.Add(Me.Btn2_4)
-        Me.Controls.Add(Me.Btn1_5)
-        Me.Controls.Add(Me.Btn1_4)
-        Me.Controls.Add(Me.Btn3_3)
-        Me.Controls.Add(Me.Btn3_2)
-        Me.Controls.Add(Me.Btn3_1)
-        Me.Controls.Add(Me.Btn2_3)
-        Me.Controls.Add(Me.Btn1_3)
-        Me.Controls.Add(Me.Btn2_2)
-        Me.Controls.Add(Me.Btn2_1)
-        Me.Controls.Add(Me.Btn1_2)
-        Me.Controls.Add(Me.Btn1_1)
         Me.Name = "Form1"
         Me.Text = "Busca Minas"
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Btn1_1 As Button
-    Friend WithEvents Btn1_2 As Button
-    Friend WithEvents Btn2_2 As Button
-    Friend WithEvents Btn2_1 As Button
-    Friend WithEvents Btn2_3 As Button
-    Friend WithEvents Btn1_3 As Button
-    Friend WithEvents Btn3_3 As Button
-    Friend WithEvents Btn3_2 As Button
-    Friend WithEvents Btn3_1 As Button
-    Friend WithEvents Btn3_5 As Button
+    Friend WithEvents Label1 As Label
     Friend WithEvents Btn3_4 As Button
     Friend WithEvents Btn2_5 As Button
+    Friend WithEvents Btn3_5 As Button
     Friend WithEvents Btn2_4 As Button
-    Friend WithEvents Btn1_5 As Button
-    Friend WithEvents Btn1_4 As Button
-    Friend WithEvents Btn5_5 As Button
-    Friend WithEvents Btn5_4 As Button
-    Friend WithEvents Btn4_5 As Button
-    Friend WithEvents Btn4_4 As Button
-    Friend WithEvents Btn5_3 As Button
-    Friend WithEvents Btn5_2 As Button
-    Friend WithEvents Btn5_1 As Button
-    Friend WithEvents Btn4_3 As Button
-    Friend WithEvents Btn4_2 As Button
     Friend WithEvents Btn4_1 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents ListBox As ListBox
+    Friend WithEvents Btn1_5 As Button
+    Friend WithEvents Btn4_2 As Button
+    Friend WithEvents Btn1_4 As Button
+    Friend WithEvents Btn4_3 As Button
+    Friend WithEvents Btn3_3 As Button
+    Friend WithEvents Btn5_1 As Button
+    Friend WithEvents Btn3_2 As Button
+    Friend WithEvents Btn5_2 As Button
+    Friend WithEvents Btn3_1 As Button
+    Friend WithEvents Btn5_3 As Button
+    Friend WithEvents Btn2_3 As Button
+    Friend WithEvents Btn4_4 As Button
+    Friend WithEvents Btn1_3 As Button
+    Friend WithEvents Btn4_5 As Button
+    Friend WithEvents Btn2_2 As Button
+    Friend WithEvents Btn5_4 As Button
+    Friend WithEvents Btn2_1 As Button
+    Friend WithEvents Btn5_5 As Button
+    Friend WithEvents Btn1_2 As Button
+    Friend WithEvents Btn1_1 As Button
+    Friend WithEvents Btn0_1 As Button
+    Friend WithEvents Btn0_2 As Button
+    Friend WithEvents Btn0_3 As Button
+    Friend WithEvents Btn0_4 As Button
+    Friend WithEvents Btn0_5 As Button
+    Friend WithEvents Btn0_6 As Button
+    Friend WithEvents Btn1_6 As Button
+    Friend WithEvents Btn2_6 As Button
+    Friend WithEvents Btn3_6 As Button
+    Friend WithEvents Btn4_6 As Button
+    Friend WithEvents Btn5_6 As Button
+    Friend WithEvents Btn6_6 As Button
+    Friend WithEvents Btn6_1 As Button
+    Friend WithEvents Btn6_2 As Button
+    Friend WithEvents Btn6_3 As Button
+    Friend WithEvents Btn6_4 As Button
+    Friend WithEvents Btn6_5 As Button
+    Friend WithEvents Btn0_0 As Button
+    Friend WithEvents Btn1_0 As Button
+    Friend WithEvents Btn2_0 As Button
+    Friend WithEvents Btn3_0 As Button
+    Friend WithEvents Btn4_0 As Button
+    Friend WithEvents Btn5_0 As Button
+    Friend WithEvents Btn6_0 As Button
+    Friend WithEvents Panel1 As Panel
 End Class
