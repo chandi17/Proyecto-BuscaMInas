@@ -68,49 +68,53 @@
         Return Resultado
     End Function
 #End Region
-#Region "Juego"
+#Region "eventos y propiedades del Juego"
 
     Private Sub Btn1_1_Click(sender As Object, e As EventArgs) Handles Btn1_1.Click
         'Declaracion de variable para almacenar el valor que retorna la funcion "EvaluarCasillas"
         If clicks(1, 1) = False Then
+            clicks(1, 1) = True
             Dim temporal As Integer
 
             GenerarMinas()
             temporal = EvaluarCasillas(1, 1)
             Btn1_1.Text = temporal
             Ubicacion(1, 1) = temporal
-            'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
         End If
-        clicks(1, 1) = True
+
     End Sub
 
     Private Sub Btn1_2_Click(sender As Object, e As EventArgs) Handles Btn1_2.Click
 
         If clicks(1, 2) = False Then
+            clicks(1, 2) = True
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(1, 2)
             Btn1_2.Text = temporal
             Ubicacion(1, 2) = temporal
-            'evaluar0(Me.Btn0_1, Me.Btn0_2, Me.Btn0_3, Me.Btn1_1, Me.Btn1_3, Me.Btn2_1, Me.Btn2_2, Me.Btn2_3, 1, 2)
+            evaluar0(Me.Btn0_1, Me.Btn0_2, Me.Btn0_3, Me.Btn1_1, Me.Btn1_3, Me.Btn2_1, Me.Btn2_2, Me.Btn2_3, 1, 2)
         End If
-        clicks(1, 2) = True
+
     End Sub
 
     Private Sub Btn1_3_Click(sender As Object, e As EventArgs) Handles Btn1_3.Click
         If clicks(1, 3) = False Then
+            clicks(1, 3) = True
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(1, 3)
             Btn1_3.Text = temporal
             Ubicacion(1, 3) = temporal
-            'evaluar0(Me.Btn0_2, Me.Btn0_3, Me.Btn0_3, Me.Btn1_2, Me.Btn1_4, Me.Btn2_2, Me.Btn2_3, Me.Btn2_4, 1, 3)
+            evaluar0(Me.Btn0_2, Me.Btn0_3, Me.Btn0_3, Me.Btn1_2, Me.Btn1_4, Me.Btn2_2, Me.Btn2_3, Me.Btn2_4, 1, 3)
         End If
-        clicks(1, 3) = True
+
     End Sub
 
     Private Sub Btn1_4_Click(sender As Object, e As EventArgs) Handles Btn1_4.Click
         If clicks(1, 4) = False Then
+            clicks(1, 4) = True
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(1, 4)
@@ -118,11 +122,12 @@
             Ubicacion(1, 4) = temporal
             evaluar0(Me.Btn0_3, Me.Btn0_4, Me.Btn0_5, Me.Btn1_3, Me.Btn1_5, Me.Btn2_3, Me.Btn2_4, Me.Btn2_5, 1, 4)
         End If
-        clicks(1, 4) = True
+
     End Sub
 
     Private Sub Btn1_5_Click(sender As Object, e As EventArgs) Handles Btn1_5.Click
         If clicks(1, 5) = False Then
+            clicks(1, 5) = True
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(1, 5)
@@ -130,23 +135,25 @@
             Ubicacion(1, 5) = temporal
             evaluar0(Me.Btn0_4, Me.Btn0_5, Me.Btn0_6, Me.Btn1_4, Me.Btn1_6, Me.Btn2_4, Me.Btn2_5, Me.Btn2_6, 1, 5)
         End If
-        clicks(1, 5) = True
+
     End Sub
 
     Private Sub Btn2_1_Click(sender As Object, e As EventArgs) Handles Btn2_1.Click
         If clicks(2, 1) = False Then
+            clicks(2, 1) = True
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(2, 1)
             Btn2_1.Text = temporal
             Ubicacion(2, 1) = temporal
-            'evaluar0(Me.Btn1_0, Me.Btn1_1, Me.Btn1_2, Me.Btn2_0, Me.Btn2_2, Me.Btn3_0, Me.Btn3_1, Me.Btn3_2, 2, 1)
+            evaluar0(Me.Btn1_0, Me.Btn1_1, Me.Btn1_2, Me.Btn2_0, Me.Btn2_2, Me.Btn3_0, Me.Btn3_1, Me.Btn3_2, 2, 1)
         End If
-        clicks(2, 1) = True
+
     End Sub
 
     Private Sub Btn2_2_Click(sender As Object, e As EventArgs) Handles Btn2_2.Click
         If clicks(2, 2) = False Then
+            clicks(2, 2) = True
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(2, 2)
@@ -154,23 +161,25 @@
             Ubicacion(2, 2) = temporal
             evaluar0(Me.Btn1_1, Me.Btn1_2, Me.Btn1_3, Me.Btn2_1, Me.Btn2_3, Me.Btn3_1, Me.Btn3_2, Me.Btn3_3, 2, 2)
         End If
-        clicks(2, 2) = True
+
     End Sub
 
     Private Sub Btn2_3_Click(sender As Object, e As EventArgs) Handles Btn2_3.Click
         If clicks(2, 3) = False Then
+            clicks(2, 3) = True
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(2, 3)
             Btn2_3.Text = temporal
             Ubicacion(2, 3) = temporal
-            'evaluar0(Me.Btn1_2, Me.Btn1_3, Me.Btn1_4, Me.Btn2_2, Me.Btn2_4, Me.Btn3_2, Me.Btn3_3, Me.Btn3_4, 2, 3)
+            evaluar0(Me.Btn1_2, Me.Btn1_3, Me.Btn1_4, Me.Btn2_2, Me.Btn2_4, Me.Btn3_2, Me.Btn3_3, Me.Btn3_4, 2, 3)
         End If
-        clicks(2, 3) = True
+
     End Sub
 
     Private Sub Btn2_4_Click(sender As Object, e As EventArgs) Handles Btn2_4.Click
         If clicks(2, 4) = False Then
+            clicks(2, 4) = True
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(2, 4)
@@ -178,10 +187,11 @@
             Ubicacion(2, 4) = temporal
             evaluar0(Me.Btn1_3, Me.Btn1_4, Me.Btn1_5, Me.Btn2_3, Me.Btn2_5, Me.Btn3_3, Me.Btn3_4, Me.Btn3_5, 2, 4)
         End If
-        clicks(2, 4) = True
+
     End Sub
     Private Sub Btn2_5_Click(sender As Object, e As EventArgs) Handles Btn2_5.Click
         If clicks(2, 5) = False Then
+            clicks(2, 5) = False
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(2, 5)
@@ -189,154 +199,206 @@
             Ubicacion(2, 5) = temporal
             evaluar0(Me.Btn1_4, Me.Btn1_5, Me.Btn1_6, Me.Btn2_4, Me.Btn2_6, Me.Btn3_4, Me.Btn3_5, Me.Btn3_6, 2, 5)
         End If
-        clicks(2, 5) = False
+
     End Sub
 
     Private Sub Btn3_1_Click(sender As Object, e As EventArgs) Handles Btn3_1.Click
         If clicks(3, 1) = False Then
+            clicks(3, 1) = True
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(3, 1)
             Btn3_1.Text = temporal
             Ubicacion(3, 1) = temporal
-            'evaluar0(Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, Me.Btn3_0, Me.Btn3_2, Me.Btn4_0, Me.Btn4_1, Me.Btn4_2, 3, 1)
+            evaluar0(Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, Me.Btn3_0, Me.Btn3_2, Me.Btn4_0, Me.Btn4_1, Me.Btn4_2, 3, 1)
         End If
 
     End Sub
 
     Private Sub Btn3_2_Click(sender As Object, e As EventArgs) Handles Btn3_2.Click
         If clicks(3, 2) = False Then
+            clicks(3, 2) = True
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(3, 2)
             Btn3_2.Text = temporal
             Ubicacion(3, 2) = temporal
-            ' evaluar0(Me.Btn2_1, Me.Btn2_2, Me.Btn2_3, Me.Btn3_1, Me.Btn3_3, Me.Btn4_1, Me.Btn4_2, Me.Btn4_3, 3, 2)
+            evaluar0(Me.Btn2_1, Me.Btn2_2, Me.Btn2_3, Me.Btn3_1, Me.Btn3_3, Me.Btn4_1, Me.Btn4_2, Me.Btn4_3, 3, 2)
         End If
-        clicks(3, 2) = True
+
     End Sub
 
     Private Sub Btn3_3_Click(sender As Object, e As EventArgs) Handles Btn3_3.Click
         If clicks(3, 3) = False Then
+            clicks(3, 3) = True
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(3, 3)
             Btn3_3.Text = temporal
             Ubicacion(3, 3) = temporal
-            'evaluar0(Me.Btn2_2, Me.Btn2_3, Me.Btn2_4, Me.Btn3_2, Me.Btn3_4, Me.Btn4_2, Me.Btn4_3, Me.Btn4_4, 3, 3)
+            evaluar0(Me.Btn2_2, Me.Btn2_3, Me.Btn2_4, Me.Btn3_2, Me.Btn3_4, Me.Btn4_2, Me.Btn4_3, Me.Btn4_4, 3, 3)
         End If
-        clicks(3, 3) = True
+
     End Sub
 
     Private Sub Btn3_4_Click(sender As Object, e As EventArgs) Handles Btn3_4.Click
         If clicks(3, 4) = False Then
+            clicks(3, 4) = True
             Dim temporal As Integer
             GenerarMinas()
             temporal = EvaluarCasillas(3, 4)
             Btn3_4.Text = temporal
             Ubicacion(3, 4) = temporal
-            'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
         End If
-        clicks(3, 4) = True
+
     End Sub
 
     Private Sub Btn3_5_Click(sender As Object, e As EventArgs) Handles Btn3_5.Click
-        Dim temporal As Integer
-        GenerarMinas()
-        temporal = EvaluarCasillas(3, 5)
-        Btn3_5.Text = temporal
-        Ubicacion(3, 5) = temporal
-        'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        If clicks(3, 5) = False Then
+            clicks(3, 5) = True
+            Dim temporal As Integer
+            GenerarMinas()
+            temporal = EvaluarCasillas(3, 5)
+            Btn3_5.Text = temporal
+            Ubicacion(3, 5) = temporal
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        End If
+
     End Sub
 
     Private Sub Btn4_1_Click(sender As Object, e As EventArgs) Handles Btn4_1.Click
-        Dim temporal As Integer
-        GenerarMinas()
-        temporal = EvaluarCasillas(4, 1)
-        Btn4_1.Text = temporal
-        Ubicacion(4, 1) = temporal
-        'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        If clicks(4, 1) = False Then
+            clicks(4, 1) = True
+            Dim temporal As Integer
+            GenerarMinas()
+            temporal = EvaluarCasillas(4, 1)
+            Btn4_1.Text = temporal
+            Ubicacion(4, 1) = temporal
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        End If
+
     End Sub
 
     Private Sub Btn4_2_Click(sender As Object, e As EventArgs) Handles Btn4_2.Click
-        Dim temporal As Integer
-        GenerarMinas()
-        temporal = EvaluarCasillas(4, 2)
-        Btn4_2.Text = temporal
-        Ubicacion(4, 2) = temporal
-        'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        If clicks(4, 2) = False Then
+            clicks(4, 2) = True
+            Dim temporal As Integer
+            GenerarMinas()
+            temporal = EvaluarCasillas(4, 2)
+            Btn4_2.Text = temporal
+            Ubicacion(4, 2) = temporal
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        End If
+
     End Sub
 
     Private Sub Btn4_3_Click(sender As Object, e As EventArgs) Handles Btn4_3.Click
-        Dim temporal As Integer
-        GenerarMinas()
-        temporal = EvaluarCasillas(4, 3)
-        Btn4_3.Text = temporal
-        Ubicacion(4, 3) = temporal
-        'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        If clicks(4, 3) = False Then
+            clicks(4, 4) = False
+            Dim temporal As Integer
+            GenerarMinas()
+            temporal = EvaluarCasillas(4, 3)
+            Btn4_3.Text = temporal
+            Ubicacion(4, 3) = temporal
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        End If
+
     End Sub
 
     Private Sub Btn4_4_Click(sender As Object, e As EventArgs) Handles Btn4_4.Click
-        Dim temporal As Integer
-        GenerarMinas()
-        temporal = EvaluarCasillas(4, 4)
-        Btn4_4.Text = temporal
-        Ubicacion(4, 4) = temporal
-        'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        If clicks(4, 4) = False Then
+            clicks(4, 4) = True
+            Dim temporal As Integer
+            GenerarMinas()
+            temporal = EvaluarCasillas(4, 4)
+            Btn4_4.Text = temporal
+            Ubicacion(4, 4) = temporal
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        End If
+
     End Sub
 
     Private Sub Btn4_5_Click(sender As Object, e As EventArgs) Handles Btn4_5.Click
-        Dim temporal As Integer
-        GenerarMinas()
-        temporal = EvaluarCasillas(4, 5)
-        Btn4_5.Text = temporal
-        Ubicacion(4, 5) = temporal
-        'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        If clicks(4, 5) = False Then
+            clicks(4, 5) = True
+            Dim temporal As Integer
+            GenerarMinas()
+            temporal = EvaluarCasillas(4, 5)
+            Btn4_5.Text = temporal
+            Ubicacion(4, 5) = temporal
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        End If
+
+
     End Sub
 
     Private Sub Btn5_1_Click(sender As Object, e As EventArgs) Handles Btn5_1.Click
-        Dim temporal As Integer
-        GenerarMinas()
-        temporal = EvaluarCasillas(5, 1)
-        Btn5_1.Text = temporal
-        Ubicacion(5, 1) = temporal
-        'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        If clicks(5, 1) = False Then
+            clicks(5, 1) = True
+            Dim temporal As Integer
+            GenerarMinas()
+            temporal = EvaluarCasillas(5, 1)
+            Btn5_1.Text = temporal
+            Ubicacion(5, 1) = temporal
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        End If
+
     End Sub
 
     Private Sub Btn5_2_Click(sender As Object, e As EventArgs) Handles Btn5_2.Click
-        Dim temporal As Integer
-        GenerarMinas()
-        temporal = EvaluarCasillas(5, 2)
-        Btn5_2.Text = temporal
-        Ubicacion(5, 2) = temporal
-        'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        If clicks(5, 2) = False Then
+            clicks(5, 2) = True
+            Dim temporal As Integer
+            GenerarMinas()
+            temporal = EvaluarCasillas(5, 2)
+            Btn5_2.Text = temporal
+            Ubicacion(5, 2) = temporal
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        End If
+
     End Sub
 
     Private Sub Btn5_3_Click(sender As Object, e As EventArgs) Handles Btn5_3.Click
-        Dim temporal As Integer
-        GenerarMinas()
-        temporal = EvaluarCasillas(5, 3)
-        Btn5_3.Text = temporal
-        Ubicacion(5, 3) = temporal
-        'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        If clicks(5, 3) = False Then
+            clicks(5, 3) = True
+            Dim temporal As Integer
+            GenerarMinas()
+            temporal = EvaluarCasillas(5, 3)
+            Btn5_3.Text = temporal
+            Ubicacion(5, 3) = temporal
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        End If
+
+
+
     End Sub
 
     Private Sub Btn5_4_Click(sender As Object, e As EventArgs) Handles Btn5_4.Click
-        Dim temporal As Integer
-        GenerarMinas()
-        temporal = EvaluarCasillas(5, 4)
-        Btn5_4.Text = temporal
-        Ubicacion(5, 4) = temporal
-        'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        If clicks(5, 4) = False Then
+            clicks(5, 4) = True
+            Dim temporal As Integer
+            GenerarMinas()
+            temporal = EvaluarCasillas(5, 4)
+            Btn5_4.Text = temporal
+            Ubicacion(5, 4) = temporal
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        End If
+
+
     End Sub
 
     Private Sub Btn5_5_Click(sender As Object, e As EventArgs) Handles Btn5_5.Click
-        Dim temporal As Integer
-        GenerarMinas()
-        temporal = EvaluarCasillas(5, 5)
-        Btn5_5.Text = temporal
-        Ubicacion(5, 5) = temporal
-        'evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        If clicks(5, 5) = False Then
+            clicks(5, 5) = True
+            Dim temporal As Integer
+            GenerarMinas()
+            temporal = EvaluarCasillas(5, 5)
+            Btn5_5.Text = temporal
+            Ubicacion(5, 5) = temporal
+            evaluar0(Me.Btn0_0, Me.Btn0_1, Me.Btn0_2, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2, 1, 1)
+        End If
+
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -344,6 +406,11 @@
         Columnas = 6
         Minas = 5
         ReDim clicks(Filas, Columnas)
+        For i = 1 To Filas Step 1
+            For m = 1 To Columnas Step 1
+                clicks(i, m) = False
+            Next
+        Next
     End Sub
 End Class
 #End Region
