@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class NivelFacil
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class NivelFacil
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Btn6_0 = New System.Windows.Forms.Button()
@@ -127,14 +127,15 @@ Partial Class NivelFacil
         Me.Panel1.Controls.Add(Me.Btn3_5)
         Me.Panel1.Controls.Add(Me.Btn2_5)
         Me.Panel1.Controls.Add(Me.Btn3_4)
-        Me.Panel1.Location = New System.Drawing.Point(169, 91)
+        Me.Panel1.Location = New System.Drawing.Point(142, 79)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(488, 450)
-        Me.Panel1.TabIndex = 28
+        Me.Panel1.Size = New System.Drawing.Size(526, 503)
+        Me.Panel1.TabIndex = 30
         '
         'Btn6_0
         '
-        Me.Btn6_0.Location = New System.Drawing.Point(3, 352)
+        Me.Btn6_0.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_0.Location = New System.Drawing.Point(52, 387)
         Me.Btn6_0.Name = "Btn6_0"
         Me.Btn6_0.Size = New System.Drawing.Size(45, 45)
         Me.Btn6_0.TabIndex = 48
@@ -144,7 +145,8 @@ Partial Class NivelFacil
         '
         'Btn5_0
         '
-        Me.Btn5_0.Location = New System.Drawing.Point(3, 290)
+        Me.Btn5_0.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_0.Location = New System.Drawing.Point(52, 292)
         Me.Btn5_0.Name = "Btn5_0"
         Me.Btn5_0.Size = New System.Drawing.Size(45, 45)
         Me.Btn5_0.TabIndex = 47
@@ -154,7 +156,8 @@ Partial Class NivelFacil
         '
         'Btn4_0
         '
-        Me.Btn4_0.Location = New System.Drawing.Point(3, 244)
+        Me.Btn4_0.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_0.Location = New System.Drawing.Point(52, 246)
         Me.Btn4_0.Name = "Btn4_0"
         Me.Btn4_0.Size = New System.Drawing.Size(45, 45)
         Me.Btn4_0.TabIndex = 46
@@ -164,7 +167,8 @@ Partial Class NivelFacil
         '
         'Btn3_0
         '
-        Me.Btn3_0.Location = New System.Drawing.Point(3, 198)
+        Me.Btn3_0.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_0.Location = New System.Drawing.Point(52, 200)
         Me.Btn3_0.Name = "Btn3_0"
         Me.Btn3_0.Size = New System.Drawing.Size(45, 45)
         Me.Btn3_0.TabIndex = 45
@@ -174,7 +178,8 @@ Partial Class NivelFacil
         '
         'Btn2_0
         '
-        Me.Btn2_0.Location = New System.Drawing.Point(3, 152)
+        Me.Btn2_0.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_0.Location = New System.Drawing.Point(52, 154)
         Me.Btn2_0.Name = "Btn2_0"
         Me.Btn2_0.Size = New System.Drawing.Size(45, 45)
         Me.Btn2_0.TabIndex = 44
@@ -184,7 +189,8 @@ Partial Class NivelFacil
         '
         'Btn1_0
         '
-        Me.Btn1_0.Location = New System.Drawing.Point(3, 106)
+        Me.Btn1_0.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_0.Location = New System.Drawing.Point(52, 108)
         Me.Btn1_0.Name = "Btn1_0"
         Me.Btn1_0.Size = New System.Drawing.Size(45, 45)
         Me.Btn1_0.TabIndex = 43
@@ -194,7 +200,8 @@ Partial Class NivelFacil
         '
         'Btn0_0
         '
-        Me.Btn0_0.Location = New System.Drawing.Point(3, 38)
+        Me.Btn0_0.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn0_0.Location = New System.Drawing.Point(52, 40)
         Me.Btn0_0.Name = "Btn0_0"
         Me.Btn0_0.Size = New System.Drawing.Size(45, 45)
         Me.Btn0_0.TabIndex = 42
@@ -204,7 +211,8 @@ Partial Class NivelFacil
         '
         'Btn6_5
         '
-        Me.Btn6_5.Location = New System.Drawing.Point(290, 352)
+        Me.Btn6_5.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_5.Location = New System.Drawing.Point(339, 387)
         Me.Btn6_5.Name = "Btn6_5"
         Me.Btn6_5.Size = New System.Drawing.Size(45, 45)
         Me.Btn6_5.TabIndex = 41
@@ -214,7 +222,8 @@ Partial Class NivelFacil
         '
         'Btn6_4
         '
-        Me.Btn6_4.Location = New System.Drawing.Point(245, 352)
+        Me.Btn6_4.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_4.Location = New System.Drawing.Point(294, 387)
         Me.Btn6_4.Name = "Btn6_4"
         Me.Btn6_4.Size = New System.Drawing.Size(45, 45)
         Me.Btn6_4.TabIndex = 40
@@ -224,7 +233,8 @@ Partial Class NivelFacil
         '
         'Btn6_3
         '
-        Me.Btn6_3.Location = New System.Drawing.Point(198, 352)
+        Me.Btn6_3.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_3.Location = New System.Drawing.Point(247, 387)
         Me.Btn6_3.Name = "Btn6_3"
         Me.Btn6_3.Size = New System.Drawing.Size(45, 45)
         Me.Btn6_3.TabIndex = 39
@@ -234,7 +244,8 @@ Partial Class NivelFacil
         '
         'Btn6_2
         '
-        Me.Btn6_2.Location = New System.Drawing.Point(152, 352)
+        Me.Btn6_2.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_2.Location = New System.Drawing.Point(201, 387)
         Me.Btn6_2.Name = "Btn6_2"
         Me.Btn6_2.Size = New System.Drawing.Size(45, 45)
         Me.Btn6_2.TabIndex = 38
@@ -244,7 +255,8 @@ Partial Class NivelFacil
         '
         'Btn6_1
         '
-        Me.Btn6_1.Location = New System.Drawing.Point(105, 352)
+        Me.Btn6_1.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_1.Location = New System.Drawing.Point(154, 388)
         Me.Btn6_1.Name = "Btn6_1"
         Me.Btn6_1.Size = New System.Drawing.Size(45, 45)
         Me.Btn6_1.TabIndex = 37
@@ -254,7 +266,8 @@ Partial Class NivelFacil
         '
         'Btn6_6
         '
-        Me.Btn6_6.Location = New System.Drawing.Point(397, 352)
+        Me.Btn6_6.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_6.Location = New System.Drawing.Point(446, 387)
         Me.Btn6_6.Name = "Btn6_6"
         Me.Btn6_6.Size = New System.Drawing.Size(45, 45)
         Me.Btn6_6.TabIndex = 36
@@ -264,7 +277,8 @@ Partial Class NivelFacil
         '
         'Btn5_6
         '
-        Me.Btn5_6.Location = New System.Drawing.Point(397, 290)
+        Me.Btn5_6.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_6.Location = New System.Drawing.Point(446, 292)
         Me.Btn5_6.Name = "Btn5_6"
         Me.Btn5_6.Size = New System.Drawing.Size(45, 45)
         Me.Btn5_6.TabIndex = 35
@@ -274,7 +288,8 @@ Partial Class NivelFacil
         '
         'Btn4_6
         '
-        Me.Btn4_6.Location = New System.Drawing.Point(397, 244)
+        Me.Btn4_6.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_6.Location = New System.Drawing.Point(446, 246)
         Me.Btn4_6.Name = "Btn4_6"
         Me.Btn4_6.Size = New System.Drawing.Size(45, 45)
         Me.Btn4_6.TabIndex = 34
@@ -284,7 +299,8 @@ Partial Class NivelFacil
         '
         'Btn3_6
         '
-        Me.Btn3_6.Location = New System.Drawing.Point(397, 198)
+        Me.Btn3_6.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_6.Location = New System.Drawing.Point(446, 200)
         Me.Btn3_6.Name = "Btn3_6"
         Me.Btn3_6.Size = New System.Drawing.Size(45, 45)
         Me.Btn3_6.TabIndex = 33
@@ -294,7 +310,8 @@ Partial Class NivelFacil
         '
         'Btn2_6
         '
-        Me.Btn2_6.Location = New System.Drawing.Point(397, 152)
+        Me.Btn2_6.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_6.Location = New System.Drawing.Point(446, 154)
         Me.Btn2_6.Name = "Btn2_6"
         Me.Btn2_6.Size = New System.Drawing.Size(45, 45)
         Me.Btn2_6.TabIndex = 32
@@ -304,7 +321,8 @@ Partial Class NivelFacil
         '
         'Btn1_6
         '
-        Me.Btn1_6.Location = New System.Drawing.Point(397, 106)
+        Me.Btn1_6.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_6.Location = New System.Drawing.Point(446, 108)
         Me.Btn1_6.Name = "Btn1_6"
         Me.Btn1_6.Size = New System.Drawing.Size(45, 45)
         Me.Btn1_6.TabIndex = 31
@@ -314,7 +332,8 @@ Partial Class NivelFacil
         '
         'Btn0_6
         '
-        Me.Btn0_6.Location = New System.Drawing.Point(397, 38)
+        Me.Btn0_6.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn0_6.Location = New System.Drawing.Point(446, 40)
         Me.Btn0_6.Name = "Btn0_6"
         Me.Btn0_6.Size = New System.Drawing.Size(45, 45)
         Me.Btn0_6.TabIndex = 30
@@ -324,7 +343,8 @@ Partial Class NivelFacil
         '
         'Btn0_5
         '
-        Me.Btn0_5.Location = New System.Drawing.Point(290, 38)
+        Me.Btn0_5.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn0_5.Location = New System.Drawing.Point(339, 40)
         Me.Btn0_5.Name = "Btn0_5"
         Me.Btn0_5.Size = New System.Drawing.Size(45, 45)
         Me.Btn0_5.TabIndex = 29
@@ -334,7 +354,8 @@ Partial Class NivelFacil
         '
         'Btn0_4
         '
-        Me.Btn0_4.Location = New System.Drawing.Point(245, 38)
+        Me.Btn0_4.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn0_4.Location = New System.Drawing.Point(294, 40)
         Me.Btn0_4.Name = "Btn0_4"
         Me.Btn0_4.Size = New System.Drawing.Size(45, 45)
         Me.Btn0_4.TabIndex = 28
@@ -344,7 +365,8 @@ Partial Class NivelFacil
         '
         'Btn0_3
         '
-        Me.Btn0_3.Location = New System.Drawing.Point(198, 38)
+        Me.Btn0_3.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn0_3.Location = New System.Drawing.Point(247, 40)
         Me.Btn0_3.Name = "Btn0_3"
         Me.Btn0_3.Size = New System.Drawing.Size(45, 45)
         Me.Btn0_3.TabIndex = 27
@@ -354,7 +376,8 @@ Partial Class NivelFacil
         '
         'Btn0_2
         '
-        Me.Btn0_2.Location = New System.Drawing.Point(152, 38)
+        Me.Btn0_2.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn0_2.Location = New System.Drawing.Point(201, 40)
         Me.Btn0_2.Name = "Btn0_2"
         Me.Btn0_2.Size = New System.Drawing.Size(45, 45)
         Me.Btn0_2.TabIndex = 26
@@ -364,7 +387,8 @@ Partial Class NivelFacil
         '
         'Btn0_1
         '
-        Me.Btn0_1.Location = New System.Drawing.Point(105, 38)
+        Me.Btn0_1.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn0_1.Location = New System.Drawing.Point(143, 40)
         Me.Btn0_1.Name = "Btn0_1"
         Me.Btn0_1.Size = New System.Drawing.Size(45, 45)
         Me.Btn0_1.TabIndex = 25
@@ -375,8 +399,8 @@ Partial Class NivelFacil
         'Btn1_1
         '
         Me.Btn1_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn1_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn1_1.Location = New System.Drawing.Point(101, 105)
+        Me.Btn1_1.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_1.Location = New System.Drawing.Point(143, 93)
         Me.Btn1_1.Name = "Btn1_1"
         Me.Btn1_1.Size = New System.Drawing.Size(45, 45)
         Me.Btn1_1.TabIndex = 0
@@ -386,8 +410,8 @@ Partial Class NivelFacil
         'Btn1_2
         '
         Me.Btn1_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn1_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn1_2.Location = New System.Drawing.Point(152, 106)
+        Me.Btn1_2.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_2.Location = New System.Drawing.Point(194, 93)
         Me.Btn1_2.Name = "Btn1_2"
         Me.Btn1_2.Size = New System.Drawing.Size(45, 45)
         Me.Btn1_2.TabIndex = 1
@@ -397,8 +421,8 @@ Partial Class NivelFacil
         'Btn5_5
         '
         Me.Btn5_5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn5_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn5_5.Location = New System.Drawing.Point(290, 290)
+        Me.Btn5_5.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_5.Location = New System.Drawing.Point(348, 297)
         Me.Btn5_5.Name = "Btn5_5"
         Me.Btn5_5.Size = New System.Drawing.Size(45, 45)
         Me.Btn5_5.TabIndex = 24
@@ -408,8 +432,8 @@ Partial Class NivelFacil
         'Btn2_1
         '
         Me.Btn2_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn2_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn2_1.Location = New System.Drawing.Point(101, 152)
+        Me.Btn2_1.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_1.Location = New System.Drawing.Point(143, 145)
         Me.Btn2_1.Name = "Btn2_1"
         Me.Btn2_1.Size = New System.Drawing.Size(45, 45)
         Me.Btn2_1.TabIndex = 2
@@ -419,8 +443,8 @@ Partial Class NivelFacil
         'Btn5_4
         '
         Me.Btn5_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn5_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn5_4.Location = New System.Drawing.Point(244, 290)
+        Me.Btn5_4.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_4.Location = New System.Drawing.Point(297, 297)
         Me.Btn5_4.Name = "Btn5_4"
         Me.Btn5_4.Size = New System.Drawing.Size(45, 45)
         Me.Btn5_4.TabIndex = 23
@@ -430,8 +454,8 @@ Partial Class NivelFacil
         'Btn2_2
         '
         Me.Btn2_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn2_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn2_2.Location = New System.Drawing.Point(152, 152)
+        Me.Btn2_2.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_2.Location = New System.Drawing.Point(194, 144)
         Me.Btn2_2.Name = "Btn2_2"
         Me.Btn2_2.Size = New System.Drawing.Size(45, 45)
         Me.Btn2_2.TabIndex = 3
@@ -441,8 +465,8 @@ Partial Class NivelFacil
         'Btn4_5
         '
         Me.Btn4_5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn4_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn4_5.Location = New System.Drawing.Point(290, 244)
+        Me.Btn4_5.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_5.Location = New System.Drawing.Point(348, 246)
         Me.Btn4_5.Name = "Btn4_5"
         Me.Btn4_5.Size = New System.Drawing.Size(45, 45)
         Me.Btn4_5.TabIndex = 22
@@ -452,8 +476,8 @@ Partial Class NivelFacil
         'Btn1_3
         '
         Me.Btn1_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn1_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn1_3.Location = New System.Drawing.Point(198, 106)
+        Me.Btn1_3.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_3.Location = New System.Drawing.Point(246, 93)
         Me.Btn1_3.Name = "Btn1_3"
         Me.Btn1_3.Size = New System.Drawing.Size(45, 45)
         Me.Btn1_3.TabIndex = 4
@@ -463,8 +487,8 @@ Partial Class NivelFacil
         'Btn4_4
         '
         Me.Btn4_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn4_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn4_4.Location = New System.Drawing.Point(244, 244)
+        Me.Btn4_4.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_4.Location = New System.Drawing.Point(297, 246)
         Me.Btn4_4.Name = "Btn4_4"
         Me.Btn4_4.Size = New System.Drawing.Size(45, 45)
         Me.Btn4_4.TabIndex = 21
@@ -474,8 +498,8 @@ Partial Class NivelFacil
         'Btn2_3
         '
         Me.Btn2_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn2_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn2_3.Location = New System.Drawing.Point(198, 152)
+        Me.Btn2_3.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_3.Location = New System.Drawing.Point(246, 144)
         Me.Btn2_3.Name = "Btn2_3"
         Me.Btn2_3.Size = New System.Drawing.Size(45, 45)
         Me.Btn2_3.TabIndex = 5
@@ -485,8 +509,8 @@ Partial Class NivelFacil
         'Btn5_3
         '
         Me.Btn5_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn5_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn5_3.Location = New System.Drawing.Point(198, 290)
+        Me.Btn5_3.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_3.Location = New System.Drawing.Point(246, 297)
         Me.Btn5_3.Name = "Btn5_3"
         Me.Btn5_3.Size = New System.Drawing.Size(45, 45)
         Me.Btn5_3.TabIndex = 20
@@ -496,8 +520,8 @@ Partial Class NivelFacil
         'Btn3_1
         '
         Me.Btn3_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn3_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn3_1.Location = New System.Drawing.Point(101, 198)
+        Me.Btn3_1.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_1.Location = New System.Drawing.Point(143, 196)
         Me.Btn3_1.Name = "Btn3_1"
         Me.Btn3_1.Size = New System.Drawing.Size(45, 45)
         Me.Btn3_1.TabIndex = 6
@@ -507,8 +531,8 @@ Partial Class NivelFacil
         'Btn5_2
         '
         Me.Btn5_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn5_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn5_2.Location = New System.Drawing.Point(152, 290)
+        Me.Btn5_2.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_2.Location = New System.Drawing.Point(194, 297)
         Me.Btn5_2.Name = "Btn5_2"
         Me.Btn5_2.Size = New System.Drawing.Size(45, 45)
         Me.Btn5_2.TabIndex = 19
@@ -518,8 +542,8 @@ Partial Class NivelFacil
         'Btn3_2
         '
         Me.Btn3_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn3_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn3_2.Location = New System.Drawing.Point(152, 198)
+        Me.Btn3_2.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_2.Location = New System.Drawing.Point(194, 195)
         Me.Btn3_2.Name = "Btn3_2"
         Me.Btn3_2.Size = New System.Drawing.Size(45, 45)
         Me.Btn3_2.TabIndex = 7
@@ -529,8 +553,8 @@ Partial Class NivelFacil
         'Btn5_1
         '
         Me.Btn5_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn5_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn5_1.Location = New System.Drawing.Point(101, 290)
+        Me.Btn5_1.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_1.Location = New System.Drawing.Point(143, 298)
         Me.Btn5_1.Name = "Btn5_1"
         Me.Btn5_1.Size = New System.Drawing.Size(45, 45)
         Me.Btn5_1.TabIndex = 18
@@ -540,8 +564,8 @@ Partial Class NivelFacil
         'Btn3_3
         '
         Me.Btn3_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn3_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn3_3.Location = New System.Drawing.Point(198, 198)
+        Me.Btn3_3.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_3.Location = New System.Drawing.Point(246, 195)
         Me.Btn3_3.Name = "Btn3_3"
         Me.Btn3_3.Size = New System.Drawing.Size(45, 45)
         Me.Btn3_3.TabIndex = 8
@@ -551,8 +575,8 @@ Partial Class NivelFacil
         'Btn4_3
         '
         Me.Btn4_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn4_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn4_3.Location = New System.Drawing.Point(198, 244)
+        Me.Btn4_3.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_3.Location = New System.Drawing.Point(246, 246)
         Me.Btn4_3.Name = "Btn4_3"
         Me.Btn4_3.Size = New System.Drawing.Size(45, 45)
         Me.Btn4_3.TabIndex = 17
@@ -562,8 +586,8 @@ Partial Class NivelFacil
         'Btn1_4
         '
         Me.Btn1_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn1_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn1_4.Location = New System.Drawing.Point(244, 106)
+        Me.Btn1_4.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_4.Location = New System.Drawing.Point(297, 93)
         Me.Btn1_4.Name = "Btn1_4"
         Me.Btn1_4.Size = New System.Drawing.Size(45, 45)
         Me.Btn1_4.TabIndex = 9
@@ -573,8 +597,8 @@ Partial Class NivelFacil
         'Btn4_2
         '
         Me.Btn4_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn4_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn4_2.Location = New System.Drawing.Point(152, 244)
+        Me.Btn4_2.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_2.Location = New System.Drawing.Point(194, 246)
         Me.Btn4_2.Name = "Btn4_2"
         Me.Btn4_2.Size = New System.Drawing.Size(45, 45)
         Me.Btn4_2.TabIndex = 16
@@ -584,8 +608,8 @@ Partial Class NivelFacil
         'Btn1_5
         '
         Me.Btn1_5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn1_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn1_5.Location = New System.Drawing.Point(290, 106)
+        Me.Btn1_5.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_5.Location = New System.Drawing.Point(348, 93)
         Me.Btn1_5.Name = "Btn1_5"
         Me.Btn1_5.Size = New System.Drawing.Size(45, 45)
         Me.Btn1_5.TabIndex = 10
@@ -595,8 +619,8 @@ Partial Class NivelFacil
         'Btn4_1
         '
         Me.Btn4_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn4_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn4_1.Location = New System.Drawing.Point(101, 244)
+        Me.Btn4_1.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_1.Location = New System.Drawing.Point(143, 247)
         Me.Btn4_1.Name = "Btn4_1"
         Me.Btn4_1.Size = New System.Drawing.Size(45, 45)
         Me.Btn4_1.TabIndex = 15
@@ -606,8 +630,8 @@ Partial Class NivelFacil
         'Btn2_4
         '
         Me.Btn2_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn2_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn2_4.Location = New System.Drawing.Point(244, 152)
+        Me.Btn2_4.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_4.Location = New System.Drawing.Point(297, 144)
         Me.Btn2_4.Name = "Btn2_4"
         Me.Btn2_4.Size = New System.Drawing.Size(45, 45)
         Me.Btn2_4.TabIndex = 11
@@ -617,8 +641,8 @@ Partial Class NivelFacil
         'Btn3_5
         '
         Me.Btn3_5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn3_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn3_5.Location = New System.Drawing.Point(290, 198)
+        Me.Btn3_5.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_5.Location = New System.Drawing.Point(348, 195)
         Me.Btn3_5.Name = "Btn3_5"
         Me.Btn3_5.Size = New System.Drawing.Size(45, 45)
         Me.Btn3_5.TabIndex = 14
@@ -628,8 +652,8 @@ Partial Class NivelFacil
         'Btn2_5
         '
         Me.Btn2_5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn2_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn2_5.Location = New System.Drawing.Point(290, 152)
+        Me.Btn2_5.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_5.Location = New System.Drawing.Point(348, 144)
         Me.Btn2_5.Name = "Btn2_5"
         Me.Btn2_5.Size = New System.Drawing.Size(45, 45)
         Me.Btn2_5.TabIndex = 12
@@ -639,8 +663,8 @@ Partial Class NivelFacil
         'Btn3_4
         '
         Me.Btn3_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn3_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn3_4.Location = New System.Drawing.Point(244, 198)
+        Me.Btn3_4.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_4.Location = New System.Drawing.Point(297, 195)
         Me.Btn3_4.Name = "Btn3_4"
         Me.Btn3_4.Size = New System.Drawing.Size(45, 45)
         Me.Btn3_4.TabIndex = 13
@@ -651,17 +675,17 @@ Partial Class NivelFacil
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(314, 34)
+        Me.Label1.Location = New System.Drawing.Point(415, 38)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(91, 38)
-        Me.Label1.TabIndex = 27
+        Me.Label1.TabIndex = 29
         Me.Label1.Text = "Facil"
         '
         'NivelFacil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(782, 625)
+        Me.ClientSize = New System.Drawing.Size(1089, 633)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "NivelFacil"

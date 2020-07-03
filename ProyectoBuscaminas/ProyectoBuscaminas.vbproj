@@ -95,10 +95,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NivelDificil.Designer.vb">
+      <DependentUpon>NivelDificil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NivelDificil.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NivelFacil.Designer.vb">
       <DependentUpon>NivelFacil.vb</DependentUpon>
     </Compile>
     <Compile Include="NivelFacil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NivelMedio.Designer.vb">
+      <DependentUpon>NivelMedio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NivelMedio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NuevoJuego.Designer.vb">
@@ -119,8 +131,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="NivelDificil.resx">
+      <DependentUpon>NivelDificil.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NivelFacil.resx">
       <DependentUpon>NivelFacil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NivelMedio.resx">
+      <DependentUpon>NivelMedio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NuevoJuego.resx">
       <DependentUpon>NuevoJuego.vb</DependentUpon>

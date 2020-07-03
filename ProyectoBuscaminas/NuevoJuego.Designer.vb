@@ -26,10 +26,10 @@ Partial Class NuevoJuego
         Me.Ayuda = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnCerrar = New System.Windows.Forms.Button()
+        Me.btnPrincipiante = New System.Windows.Forms.Button()
         Me.btnFacil = New System.Windows.Forms.Button()
         Me.btnIntermedio = New System.Windows.Forms.Button()
         Me.btnAvanzado = New System.Windows.Forms.Button()
-        Me.btnPrincipiante = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -83,6 +83,21 @@ Partial Class NuevoJuego
         Me.btnCerrar.TabIndex = 0
         Me.btnCerrar.UseVisualStyleBackColor = True
         '
+        'btnPrincipiante
+        '
+        Me.btnPrincipiante.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(121, Byte), Integer))
+        Me.btnPrincipiante.FlatAppearance.BorderSize = 0
+        Me.btnPrincipiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPrincipiante.Font = New System.Drawing.Font("Candara", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrincipiante.ForeColor = System.Drawing.Color.Silver
+        Me.btnPrincipiante.Location = New System.Drawing.Point(143, 117)
+        Me.btnPrincipiante.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnPrincipiante.Name = "btnPrincipiante"
+        Me.btnPrincipiante.Size = New System.Drawing.Size(348, 37)
+        Me.btnPrincipiante.TabIndex = 1
+        Me.btnPrincipiante.Text = "Principiane"
+        Me.btnPrincipiante.UseVisualStyleBackColor = False
+        '
         'btnFacil
         '
         Me.btnFacil.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(121, Byte), Integer))
@@ -128,21 +143,6 @@ Partial Class NuevoJuego
         Me.btnAvanzado.Text = "Avanzado"
         Me.btnAvanzado.UseVisualStyleBackColor = False
         '
-        'btnPrincipiante
-        '
-        Me.btnPrincipiante.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(121, Byte), Integer))
-        Me.btnPrincipiante.FlatAppearance.BorderSize = 0
-        Me.btnPrincipiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPrincipiante.Font = New System.Drawing.Font("Candara", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrincipiante.ForeColor = System.Drawing.Color.Silver
-        Me.btnPrincipiante.Location = New System.Drawing.Point(143, 117)
-        Me.btnPrincipiante.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnPrincipiante.Name = "btnPrincipiante"
-        Me.btnPrincipiante.Size = New System.Drawing.Size(348, 37)
-        Me.btnPrincipiante.TabIndex = 1
-        Me.btnPrincipiante.Text = "Principiane"
-        Me.btnPrincipiante.UseVisualStyleBackColor = False
-        '
         'NuevoJuego
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -167,11 +167,11 @@ Partial Class NuevoJuego
     End Sub
 
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents btnPrincipiante As Button
     Friend WithEvents btnFacil As Button
     Friend WithEvents btnIntermedio As Button
     Friend WithEvents btnAvanzado As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnCerrar As Button
     Friend WithEvents Ayuda As Label
-    Friend WithEvents btnPrincipiante As Button
 End Class
