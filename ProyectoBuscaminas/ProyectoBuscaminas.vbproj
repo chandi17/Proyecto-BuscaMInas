@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{51C80C8E-A5D2-460C-B9B4-6EF1A59A9ABD}</ProjectGuid>
+    <ProjectGuid>{9BB98E45-37A6-4FAE-8849-B5F34933A3E8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Proyecto_BuscaMinas.My.MyApplication</StartupObject>
-    <RootNamespace>Proyecto_BuscaMinas</RootNamespace>
-    <AssemblyName>Proyecto-BuscaMinas</AssemblyName>
+    <StartupObject>ProyectoBuscaminas.My.MyApplication</StartupObject>
+    <RootNamespace>ProyectoBuscaminas</RootNamespace>
+    <AssemblyName>ProyectoBuscaminas</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Proyecto-BuscaMinas.xml</DocumentationFile>
+    <DocumentationFile>ProyectoBuscaminas.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Proyecto-BuscaMinas.xml</DocumentationFile>
+    <DocumentationFile>ProyectoBuscaminas.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -73,17 +73,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
+    <Compile Include="FormAyuda.Designer.vb">
+      <DependentUpon>FormAyuda.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FormAyuda.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -95,17 +95,35 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NivelFacil.Designer.vb">
+      <DependentUpon>NivelFacil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NivelFacil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoJuego.Designer.vb">
+      <DependentUpon>NuevoJuego.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoJuego.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="FormAyuda.resx">
+      <DependentUpon>FormAyuda.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NivelFacil.resx">
+      <DependentUpon>NivelFacil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoJuego.resx">
+      <DependentUpon>NuevoJuego.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +137,27 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuda.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono cerrar FN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-circle-solid-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_naval_mine_5.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

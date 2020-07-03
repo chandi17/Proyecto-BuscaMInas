@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class NivelFacil
 #Region "Evaliación del Juego"
     Private Estado As Boolean = False
     Private Sub evaluar0(ByRef botones1_1 As Button, ByRef botones1_2 As Button, ByRef botones1_3 As Button, ByRef botones2_1 As Button, ByRef botones2_3 As Button, ByRef botones3_1 As Button, ByRef botones3_2 As Button, ByRef botones3_3 As Button, X As Integer, Y As Integer)
@@ -67,6 +67,25 @@
         End If
         Return Resultado
     End Function
+    Public Sub SeleccionImagen(btn As Button, X As Integer, Y As Integer)
+        Select Case Ubicacion(X, Y)
+            Case -1
+                btn.Image = Image.FromFile("C:\Users\Elmer Chandia\Downloads\IIP-IF325-IIP-master\ProyectoBuscaminas\Resources\mina.png")
+            Case 0
+            Case 1
+            Case 2
+            Case 3
+            Case 4
+            Case 5
+            Case 6
+            Case 7
+            Case 8
+            Case Else
+                MsgBox("Error de asignación de imagen", MessageBoxButtons.OK)
+        End Select
+
+
+    End Sub
 #End Region
 #Region "eventos y propiedades del Juego"
 
@@ -120,7 +139,9 @@
             temporal = EvaluarCasillas(1, 4)
             Btn1_4.Text = temporal
             Ubicacion(1, 4) = temporal
+            SeleccionImagen(Me.Btn1_4, 1, 4)
             evaluar0(Me.Btn0_3, Me.Btn0_4, Me.Btn0_5, Me.Btn1_3, Me.Btn1_5, Me.Btn2_3, Me.Btn2_4, Me.Btn2_5, 1, 4)
+
         End If
 
     End Sub
@@ -133,6 +154,7 @@
             temporal = EvaluarCasillas(1, 5)
             Btn1_5.Text = temporal
             Ubicacion(1, 5) = temporal
+            SeleccionImagen(Me.Btn1_5, 1, 5)
             evaluar0(Me.Btn0_4, Me.Btn0_5, Me.Btn0_6, Me.Btn1_4, Me.Btn1_6, Me.Btn2_4, Me.Btn2_5, Me.Btn2_6, 1, 5)
         End If
 
