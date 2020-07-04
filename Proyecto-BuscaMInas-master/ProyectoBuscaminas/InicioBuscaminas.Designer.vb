@@ -31,7 +31,7 @@ Partial Class InicioBuscaminas
         'pgbCargando
         '
         Me.pgbCargando.Location = New System.Drawing.Point(101, 388)
-        Me.pgbCargando.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pgbCargando.Margin = New System.Windows.Forms.Padding(4)
         Me.pgbCargando.Name = "pgbCargando"
         Me.pgbCargando.Size = New System.Drawing.Size(711, 49)
         Me.pgbCargando.TabIndex = 0
@@ -62,7 +62,7 @@ Partial Class InicioBuscaminas
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.pgbCargando)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "InicioBuscaminas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "InicioBuscaminas"

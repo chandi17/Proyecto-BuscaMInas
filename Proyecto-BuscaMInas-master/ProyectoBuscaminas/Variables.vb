@@ -7,4 +7,5 @@
     Public estado As Boolean
     Public Gano As Integer = 0
     Public limiteDeBotones As Integer = 0
+    Public segundos As Integer = 0
 End Module

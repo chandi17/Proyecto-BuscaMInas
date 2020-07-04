@@ -29,4 +29,8 @@
         'Hacer el formulario del tamaño de la pantalla
         Me.WindowState = FormWindowState.Maximized
     End Sub
+
+    Private Sub Btn1_1_Click(sender As Object, e As EventArgs) Handles Btn1_1.Click
+
+    End Sub
 End Class

@@ -328,7 +328,7 @@ Partial Class NivelMedio
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1053, 750)
         Me.Panel1.TabIndex = 101
@@ -2066,7 +2066,7 @@ Partial Class NivelMedio
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.ProyectoBuscaminas.My.Resources.Resources.fondoJuego
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(1053, 750)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2092,7 +2092,7 @@ Partial Class NivelMedio
         Me.PanelSuperior.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelSuperior.ForeColor = System.Drawing.Color.Transparent
         Me.PanelSuperior.Location = New System.Drawing.Point(0, 0)
-        Me.PanelSuperior.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PanelSuperior.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelSuperior.Name = "PanelSuperior"
         Me.PanelSuperior.Size = New System.Drawing.Size(1053, 76)
         Me.PanelSuperior.TabIndex = 102
@@ -2118,7 +2118,7 @@ Partial Class NivelMedio
         Me.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMenuPrincipal.Font = New System.Drawing.Font("Georgia", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMenuPrincipal.Location = New System.Drawing.Point(16, 15)
-        Me.btnMenuPrincipal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnMenuPrincipal.Margin = New System.Windows.Forms.Padding(4)
         Me.btnMenuPrincipal.Name = "btnMenuPrincipal"
         Me.btnMenuPrincipal.Size = New System.Drawing.Size(136, 49)
         Me.btnMenuPrincipal.TabIndex = 6
@@ -2135,7 +2135,7 @@ Partial Class NivelMedio
         Me.btnSalirJuego.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSalirJuego.Font = New System.Drawing.Font("Georgia", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSalirJuego.Location = New System.Drawing.Point(901, 15)
-        Me.btnSalirJuego.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSalirJuego.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSalirJuego.Name = "btnSalirJuego"
         Me.btnSalirJuego.Size = New System.Drawing.Size(136, 49)
         Me.btnSalirJuego.TabIndex = 5

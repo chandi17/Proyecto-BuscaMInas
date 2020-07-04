@@ -1,7 +1,13 @@
-﻿Public Class NivelFacil
+﻿Imports System.Data.SqlClient
+
+
+Public Class NivelFacil
+
+
+
 #Region "Evaliación del Juego"
     Private Estado As Boolean = False
-    Private Sub evaluar0(ByRef botones1_1 As Button, ByRef botones1_2 As Button, ByRef botones1_3 As Button, ByRef botones2_1 As Button, ByRef botones2_3 As Button, ByRef botones3_1 As Button, ByRef botones3_2 As Button, ByRef botones3_3 As Button, X As Integer, Y As Integer)
+    Public Sub evaluar0(ByRef botones1_1 As Button, ByRef botones1_2 As Button, ByRef botones1_3 As Button, ByRef botones2_1 As Button, ByRef botones2_3 As Button, ByRef botones3_1 As Button, ByRef botones3_2 As Button, ByRef botones3_3 As Button, X As Integer, Y As Integer)
         'Evalua si en la posicion del arreglo al que pertenece ese boton = 0 entonces llama el evento click de cada uno de los botones que lo roden 
         If Ubicacion(X, Y) = 0 Then
             botones1_1.PerformClick()
@@ -107,6 +113,7 @@
             End Select
         Else
             MessageBox.Show("Felicidades Gano", "Felicidades")
+
             NuevoJuego.Show()
             My.Forms.NivelFacil.Close()
         End If
