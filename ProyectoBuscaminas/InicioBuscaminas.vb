@@ -46,8 +46,12 @@ Public Class InicioBuscaminas
 
     Private Sub InicioBuscaminas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conexion.Verificarconexion()
-        Dim avatar As String = "Elmer"
-        Dim Mens As String = conexion.insertarPuntos(54, avatar)
-        MsgBox(Mens, MessageBoxButtons.OK)
+        'Dim avatar As String = "Elmer"
+        'Dim Mens As String = conexion.insertarPuntos(54, avatar)
+        'MsgBox(Mens, MessageBoxButtons.OK)
+        'Dim r As Integer = conexion.VerificarPuntuacion()
+        'conexion.ActualizarDatos(95, "Chandi17")
+        'conexion.ResetPuntos()
     End Sub
+
 End Class

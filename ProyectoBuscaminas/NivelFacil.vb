@@ -1,9 +1,6 @@
 ﻿Imports System.Data.SqlClient
-
-
 Public Class NivelFacil
-
-
+    Dim conexion As Conexion = New Conexion()
 
 #Region "Evaliación del Juego"
     Private Estado As Boolean = False
@@ -114,10 +111,20 @@ Public Class NivelFacil
         Else
             MessageBox.Show("Felicidades Gano", "Felicidades")
 
-            NuevoJuego.Show()
+            Dim avatar As String
+            Do While avatar <> ""
+                avatar = InputBox("Ingresa tu avatar: ", "Campo Obligatorio")
+            Loop
+            Dim verificar As Boolean = conexion.ValidarExiste(avatar)
+
+            If verificar = False Then
+                conexion.insertarPuntos(85, avatar)
+            Else
+                conexion.ActualizarDatos(85, avatar)
+            End If
+
             My.Forms.NivelFacil.Close()
         End If
-
     End Sub
     Public Sub Resumen(X As Integer, Y As Integer, ByRef botones2_2 As Button, ByRef botones1_1 As Button, ByRef botones1_2 As Button, ByRef botones1_3 As Button, ByRef botones2_1 As Button, ByRef botones2_3 As Button, ByRef botones3_1 As Button, ByRef botones3_2 As Button, ByRef botones3_3 As Button)
         If clicks(X, Y) = False Then

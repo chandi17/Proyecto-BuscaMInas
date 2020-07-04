@@ -96,4 +96,9 @@ Public Class MenuPrincipal
     Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
     End Sub
+
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        Me.Hide()
+        FormAyuda.Show()
+    End Sub
 End Class
