@@ -52,6 +52,12 @@ Public Class InicioBuscaminas
         'Dim r As Integer = conexion.VerificarPuntuacion()
         'conexion.ActualizarDatos(95, "Chandi17")
         'conexion.ResetPuntos()
+        'Dim r As Boolean = conexion.ValidarExiste("Elmer")
+        'If r = True Then
+        ' MsgBox("Verdadero")
+        'Else
+        'MsgBox("False")
+        'End If
     End Sub
 
 End Class

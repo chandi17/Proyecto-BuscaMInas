@@ -1,41 +1,11 @@
 ﻿Public Class NivelMedio
+    Dim conexion As Conexion = New Conexion()
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
 
-    Private Sub btnSalirJuego_Click(sender As Object, e As EventArgs) Handles btnSalirJuego.Click
-        Dim salir As String
-
-        salir = MsgBox("¿Esta seguro que desea salir?", 36, "SALIR")
-        If salir = 6 Then
-            End
-        End If
     End Sub
 
-    Private Sub btnMenuPrincipal_Click(sender As Object, e As EventArgs) Handles btnMenuPrincipal.Click
-        'Definir las Variables
-        Dim formulario As New MenuPrincipal
 
-        'Pasar al Siguiente Formulario
-        formulario.Show()
-        Me.Close()
-    End Sub
 
-    Private Sub NivelMedio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Hacer el formulario del tamaño de la pantalla
-        Me.WindowState = FormWindowState.Maximized
-        Filas = 11
-        Columnas = 11
-        Minas = 10
-        limiteDeBotones = (Filas - 1) * (Columnas - 1) - Minas
-        ReDim clicks(Filas, Columnas)
-        For i = 0 To Filas Step 1
-            For m = 0 To Columnas Step 1
-                Ubicacion(i, m) = 0
-                clicks(i, m) = False
-            Next
-        Next
-        Estado = False
-        Gano = 0
-    End Sub
-#Region "Evaliación del Juego"
     Private Estado As Boolean = False
     Private Sub evaluar0(ByRef botones1_1 As Button, ByRef botones1_2 As Button, ByRef botones1_3 As Button, ByRef botones2_1 As Button, ByRef botones2_3 As Button, ByRef botones3_1 As Button, ByRef botones3_2 As Button, ByRef botones3_3 As Button, X As Integer, Y As Integer)
         'Evalua si en la posicion del arreglo al que pertenece ese boton = 0 entonces llama el evento click de cada uno de los botones que lo roden 
@@ -49,8 +19,8 @@
             botones3_2.PerformClick()
             botones3_3.PerformClick()
         End If
-
     End Sub
+
     'Genera las minas en posiciones aleatorias en la matriz
     Public Sub GenerarMinas(PX As Integer, PY As Integer)
         'Evalua si es la primera vez que se generan las minas 
@@ -84,6 +54,7 @@
 
 
     End Sub
+
     Public Function EvaluarCasillas(X As Integer, Y As Integer) As Integer
         'declaracion de las variables para especificar las cordenasdas de donde se encuentra el boton 
         Dim LimiteInferiorFilas As Integer = X - 1
@@ -109,6 +80,8 @@
         End If
         Return Resultado
     End Function
+
+
     Public Sub SeleccionImagen(btn As Button, X As Integer, Y As Integer)
         'txtTiempo.Text = 1
         Gano += 1
@@ -119,8 +92,9 @@
                     'btn.BackgroundImage = My.Resources.icons8_naval_mine_5
                     TimerMedio.Stop()
                     MessageBox.Show("Juego Terminado", "Fin", MessageBoxButtons.OK)
-                    'NuevoJuego.Show()
-                    My.Forms.NivelFacil.Close()
+                    NuevoJuego.Show()
+                    My.Forms.NivelMedio.Close()
+
 
                 Case 0
                     btn.Text = ""
@@ -146,12 +120,73 @@
             End Select
         Else
             TimerMedio.Stop()
-            MessageBox.Show("Felicidades Gano", "Felicidades")
-            'NuevoJuego.Show()
+            Dim avatar As String = ""
+            Do While avatar = ""
+                avatar = InputBox("Ingresa tu avatar: ", "Campo Obligatorio")
+            Loop
+            segundos = Int(Val(lblSegs.Text))
+            minutos = Int(Val(lblMin.Text))
+            puntos = (minutos * 360) + segundos
+            Dim verificar As Boolean = Conexion.ValidarExiste(avatar)
+            If verificar = False Then
+                Conexion.insertarPuntos(puntos, avatar)
+                Dim mensa As String = "Felicidades " & avatar & " tu tiempo es: " & minutos & " : " & segundos & " Segundos"
+                MessageBox.Show(mensa, "Felicidades", MessageBoxButtons.OK)
+                MenuPrincipal.Show()
+                My.Forms.NivelFacil.Close()
+                Exit Sub
+            Else
+                Conexion.ActualizarDatos(puntos, avatar)
+                Dim mensa As String = "Felicidades " & avatar & "tu tiempo es: " & minutos & " : " & segundos & " Segundos"
+                MessageBox.Show(mensa, "Felicidades", MessageBoxButtons.OK)
+                MenuPrincipal.Show()
+                My.Forms.NivelFacil.Close()
+                Exit Sub
+            End If
+            MenuPrincipal.Show()
             My.Forms.NivelFacil.Close()
         End If
 
     End Sub
+
+    Private Sub btnSalirJuego_Click(sender As Object, e As EventArgs) Handles btnSalirJuego.Click
+        Dim salir As String
+
+        salir = MsgBox("¿Esta seguro que desea salir?", 36, "SALIR")
+        If salir = 6 Then
+            End
+        End If
+    End Sub
+
+    Private Sub btnMenuPrincipal_Click(sender As Object, e As EventArgs) Handles btnMenuPrincipal.Click
+        'Definir las Variables
+        Dim formulario As New MenuPrincipal
+
+        'Pasar al Siguiente Formulario
+        formulario.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub NivelMedio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Hacer el formulario del tamaño de la pantalla
+        Me.WindowState = FormWindowState.Maximized
+
+        Filas = 11
+        Columnas = 11
+        Minas = 10
+        limiteDeBotones = (Filas - 1) * (Columnas - 1) - Minas
+        ReDim clicks(Filas, Columnas)
+        For i = 0 To Filas Step 1
+            For m = 0 To Columnas Step 1
+                Ubicacion(i, m) = 0
+                clicks(i, m) = False
+            Next
+        Next
+        Estado = False
+        Gano = 0
+
+    End Sub
+
     Public Sub Resumen(X As Integer, Y As Integer, ByRef botones2_2 As Button, ByRef botones1_1 As Button, ByRef botones1_2 As Button, ByRef botones1_3 As Button, ByRef botones2_1 As Button, ByRef botones2_3 As Button, ByRef botones3_1 As Button, ByRef botones3_2 As Button, ByRef botones3_3 As Button)
         TimerMedio.Start()
 
@@ -164,10 +199,8 @@
 
         End If
     End Sub
-#End Region
 
-#Region "eventos y propiedades del Juego"
-
+#Region "Botones"
     Private Sub Btn1_1_Click(sender As Object, e As EventArgs) Handles Btn1_1.Click
         'Declaracion de variable para almacenar el valor que retorna la funcion "EvaluarCasillas"
         Resumen(1, 1, Me.Btn1_1, Me.Btn0_1, Me.Btn0_2, Me.Btn0_3, Me.Btn1_0, Me.Btn1_2, Me.Btn2_0, Me.Btn2_1, Me.Btn2_2)
@@ -569,6 +602,7 @@
     Private Sub Btn10_10_Click(sender As Object, e As EventArgs) Handles Btn10_10.Click
         Resumen(10, 10, Me.Btn10_10, Me.Btn9_9, Me.Btn9_10, Me.Btn9_11, Me.Btn10_9, Me.Btn10_11, Me.Btn11_9, Me.Btn11_10, Me.Btn11_11)
     End Sub
+#End Region
 
 
 
@@ -589,8 +623,9 @@
         If lblMin.Text = 60 Then
             lblMin.Text = 0
         End If
-
     End Sub
 
+    Private Sub PanelSuperior_Paint(sender As Object, e As PaintEventArgs) Handles PanelSuperior.Paint
+
+    End Sub
 End Class
-#End Region

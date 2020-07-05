@@ -36,8 +36,6 @@ Public Class NivelFacil
                     X = Math.Ceiling(Rnd() * Filas - 1)
                     Y = Math.Ceiling(Rnd() * Columnas - 1)
                 Loop
-                MsgBox(X, MessageBoxButtons.OK)
-                MsgBox(Y, MessageBoxButtons.OK)
                 'Evalua si ya existe una mina en esa posicion
                 If Ubicacion(X, Y) <> -1 Then
                     Ubicacion(X, Y) = -1
@@ -81,6 +79,7 @@ Public Class NivelFacil
         If Gano <> limiteDeBotones Then
             Select Case Ubicacion(X, Y)
                 Case -1
+                    TimerFacil.Stop()
                     'btn.Image = Image.FromFile("Ruta de los imagen")
                     btn.BackgroundImage = My.Resources.icons8_naval_mine_5
                     MessageBox.Show("Juego Terminado", "Fin", MessageBoxButtons.OK)
@@ -109,24 +108,37 @@ Public Class NivelFacil
                     MsgBox("Error de asignación de imagen", MessageBoxButtons.OK)
             End Select
         Else
-            MessageBox.Show("Felicidades Gano", "Felicidades")
-
-            Dim avatar As String
-            Do While avatar <> ""
+            TimerFacil.Stop()
+            Dim avatar As String = ""
+            Do While avatar = ""
                 avatar = InputBox("Ingresa tu avatar: ", "Campo Obligatorio")
             Loop
+            segundos = Int(Val(lblSegs.Text))
+            minutos = Int(Val(lblMin.Text))
+            puntos = (minutos * 360) + segundos
             Dim verificar As Boolean = conexion.ValidarExiste(avatar)
-
             If verificar = False Then
-                conexion.insertarPuntos(85, avatar)
+                conexion.insertarPuntos(puntos, avatar)
+                Dim mensa As String = "Felicidades " & avatar & " tu tiempo es: " & minutos & " : " & segundos & " Segundos"
+                MessageBox.Show(mensa, "Felicidades", MessageBoxButtons.OK)
+                MenuPrincipal.Show()
+                My.Forms.NivelFacil.Close()
+                Exit Sub
             Else
-                conexion.ActualizarDatos(85, avatar)
+                conexion.ActualizarDatos(puntos, avatar)
+                Dim mensa As String = "Felicidades " & avatar & "tu tiempo es: " & minutos & " : " & segundos & " Segundos"
+                MessageBox.Show(mensa, "Felicidades", MessageBoxButtons.OK)
+                MenuPrincipal.Show()
+                My.Forms.NivelFacil.Close()
+                Exit Sub
             End If
-
+            MenuPrincipal.Show()
             My.Forms.NivelFacil.Close()
         End If
     End Sub
     Public Sub Resumen(X As Integer, Y As Integer, ByRef botones2_2 As Button, ByRef botones1_1 As Button, ByRef botones1_2 As Button, ByRef botones1_3 As Button, ByRef botones2_1 As Button, ByRef botones2_3 As Button, ByRef botones3_1 As Button, ByRef botones3_2 As Button, ByRef botones3_3 As Button)
+        TimerFacil.Start()
+
         If clicks(X, Y) = False Then
             clicks(X, Y) = True
             GenerarMinas(X, Y)
@@ -279,11 +291,30 @@ Public Class NivelFacil
         Me.Close()
     End Sub
 
-    Private Sub PanelSuperior_Paint(sender As Object, e As PaintEventArgs) Handles PanelSuperior.Paint
+    Private Sub TimerFacil_Tick(sender As Object, e As EventArgs) Handles TimerFacil.Tick
+        lblMiliSegs.Text += 1
+
+
+        If lblMiliSegs.Text = 10 Then
+            lblMiliSegs.Text = 0
+            lblSegs.Text += 1
+        End If
+
+        If lblSegs.Text = 60 Then
+            lblSegs.Text = 0
+            lblMin.Text += 1
+        End If
+
+        If lblMin.Text = 60 Then
+            lblMin.Text = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
 
-    Private Sub lblMin_Click(sender As Object, e As EventArgs) Handles lblMin.Click
+    Private Sub PanelSuperior_Paint(sender As Object, e As PaintEventArgs) Handles PanelSuperior.Paint
 
     End Sub
 End Class

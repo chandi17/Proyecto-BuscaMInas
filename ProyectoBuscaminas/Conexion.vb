@@ -21,29 +21,27 @@ Public Class Conexion
         Try
             'conexion es el nombre de la clase; open() abre la conexion con sql, si se abre la conexion muestra e msj conectado sino cierra la conexion
             LaConexion.Open()
-            MessageBox.Show("Conectado")
         Catch ex As Exception
             MessageBox.Show("Error al conectar")
         Finally
             LaConexion.Close()
         End Try
     End Sub
-    Function insertarPuntos(ByVal puntos As Integer, ByVal avatar As String)
+    Function insertarPuntos(segundos As Integer, nombre As String)
 
         Dim mensaje As String = "Nuevo Record almacenado"
-
         Try
             LaConexion.Open()
             '"insert into Mejores.Ranking(avatar,puntos) Values('Ericka',200)"
-            Dim Temporal As String = "insert into Mejores.Ranking(avatar,puntos) Values('" & avatar & "'," & 72 & ")"
+            ' insert into Mejores.Ranking(avatar, puntos) Values('Chandi17',72)
+            Dim Temporal As String = "insert into Mejores.Ranking(avatar,puntos) Values('" & nombre & "'," & segundos & ")"
             comando = New SqlCommand(Temporal, LaConexion)
             comando.ExecuteNonQuery()
         Catch ex As Exception
-            mensaje = "No se inserto por:  " + ex.ToString
+            MsgBox(ex.Message)
         Finally
             LaConexion.Close()
         End Try
-        Return mensaje
 
     End Function
 
@@ -56,6 +54,7 @@ Public Class Conexion
             dr = comando.ExecuteReader
             If dr.Read Then
                 resultado = dr.GetInt32(0)
+                else 
             End If
             dr.Close()
         Catch ex As Exception
@@ -71,8 +70,8 @@ Public Class Conexion
         Dim resultado As Boolean = False
         Try
             LaConexion.Open()
-            ''Dim query As String = "select * from personas.estudiante where codigo = '" + codigo + "'"
-            comando = New SqlCommand(" select puntos from Mejores.Ranking where Mejores.avatar = '" + avatar + "'", LaConexion)
+            'select count (avatar) from mejores.Ranking where avatar = 'Elmer'
+            comando = New SqlCommand("select count (avatar) from mejores.Ranking where avatar = '" + avatar + "'", LaConexion)
             dr = comando.ExecuteReader
             If dr.Read Then
                 resultado = True

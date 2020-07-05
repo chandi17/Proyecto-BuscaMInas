@@ -98,7 +98,6 @@ Public Class MenuPrincipal
     End Sub
 
     Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
-        Me.Hide()
         FormAyuda.Show()
     End Sub
 End Class

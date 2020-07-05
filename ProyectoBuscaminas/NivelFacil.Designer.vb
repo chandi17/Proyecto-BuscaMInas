@@ -22,6 +22,7 @@ Partial Class NivelFacil
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lblMiliSegs = New System.Windows.Forms.Label()
@@ -83,6 +84,7 @@ Partial Class NivelFacil
         Me.Btn2_5 = New System.Windows.Forms.Button()
         Me.Btn3_4 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TimerFacil = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.PanelSuperior.SuspendLayout()
@@ -932,6 +934,9 @@ Partial Class NivelFacil
         Me.PictureBox1.TabIndex = 49
         Me.PictureBox1.TabStop = False
         '
+        'TimerFacil
+        '
+        '
         'NivelFacil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1013,4 +1018,5 @@ Partial Class NivelFacil
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents TimerFacil As Timer
 End Class

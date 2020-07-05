@@ -64,7 +64,7 @@ Partial Class MenuPrincipal
         Me.btnMaximizar.Name = "btnMaximizar"
         Me.btnMaximizar.Size = New System.Drawing.Size(53, 49)
         Me.btnMaximizar.TabIndex = 7
-        Me.btnMaximizar.UseVisualStyleBackColor = True
+        Me.btnMaximizar.UseVisualStyleBackColor = False
         '
         'btnMinimizar
         '
@@ -95,7 +95,6 @@ Partial Class MenuPrincipal
         Me.btnRestaurar.Size = New System.Drawing.Size(53, 49)
         Me.btnRestaurar.TabIndex = 5
         Me.btnRestaurar.UseVisualStyleBackColor = True
-        Me.btnRestaurar.Visible = False
         '
         'btnCerrar
         '
@@ -133,7 +132,7 @@ Partial Class MenuPrincipal
         Me.btnAyuda.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAyuda.Font = New System.Drawing.Font("Georgia", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAyuda.ForeColor = System.Drawing.Color.White
-        Me.btnAyuda.Location = New System.Drawing.Point(356, 261)
+        Me.btnAyuda.Location = New System.Drawing.Point(540, 146)
         Me.btnAyuda.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAyuda.Name = "btnAyuda"
         Me.btnAyuda.Size = New System.Drawing.Size(304, 89)
@@ -156,6 +155,7 @@ Partial Class MenuPrincipal
         Me.btnMejorPuntaje.TabIndex = 2
         Me.btnMejorPuntaje.Text = "Mejor Puntaje"
         Me.btnMejorPuntaje.UseVisualStyleBackColor = True
+        Me.btnMejorPuntaje.Visible = False
         '
         'btnNuevoJuego
         '

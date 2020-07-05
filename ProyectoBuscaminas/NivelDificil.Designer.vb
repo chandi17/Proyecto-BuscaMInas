@@ -22,7 +22,14 @@ Partial Class NivelDificil
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.lblMiliSegs = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblSegs = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblMin = New System.Windows.Forms.Label()
         Me.Btn10_0 = New System.Windows.Forms.Button()
         Me.Btn9_0 = New System.Windows.Forms.Button()
         Me.Btn8_0 = New System.Windows.Forms.Button()
@@ -317,13 +324,16 @@ Partial Class NivelDificil
         Me.lbDificil = New System.Windows.Forms.Label()
         Me.btnMenuPrincipal = New System.Windows.Forms.Button()
         Me.btnSalirJuego = New System.Windows.Forms.Button()
+        Me.TimerDificil = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelSuperior.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.Btn10_0)
         Me.Panel1.Controls.Add(Me.Btn9_0)
         Me.Panel1.Controls.Add(Me.Btn8_0)
@@ -616,10 +626,84 @@ Partial Class NivelDificil
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1180, 970)
         Me.Panel1.TabIndex = 498
+        '
+        'Panel2
+        '
+        Me.Panel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel2.Controls.Add(Me.lblMiliSegs)
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.lblSegs)
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.lblMin)
+        Me.Panel2.ForeColor = System.Drawing.Color.Transparent
+        Me.Panel2.Location = New System.Drawing.Point(1006, 139)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(400, 64)
+        Me.Panel2.TabIndex = 500
+        '
+        'lblMiliSegs
+        '
+        Me.lblMiliSegs.AutoSize = True
+        Me.lblMiliSegs.BackColor = System.Drawing.Color.Transparent
+        Me.lblMiliSegs.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMiliSegs.ForeColor = System.Drawing.Color.Silver
+        Me.lblMiliSegs.Location = New System.Drawing.Point(305, 0)
+        Me.lblMiliSegs.Name = "lblMiliSegs"
+        Me.lblMiliSegs.Size = New System.Drawing.Size(92, 56)
+        Me.lblMiliSegs.TabIndex = 53
+        Me.lblMiliSegs.Text = "00"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Silver
+        Me.Label2.Location = New System.Drawing.Point(257, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(42, 56)
+        Me.Label2.TabIndex = 57
+        Me.Label2.Text = ":"
+        '
+        'lblSegs
+        '
+        Me.lblSegs.AutoSize = True
+        Me.lblSegs.BackColor = System.Drawing.Color.Transparent
+        Me.lblSegs.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSegs.ForeColor = System.Drawing.Color.Silver
+        Me.lblSegs.Location = New System.Drawing.Point(159, 0)
+        Me.lblSegs.Name = "lblSegs"
+        Me.lblSegs.Size = New System.Drawing.Size(92, 56)
+        Me.lblSegs.TabIndex = 54
+        Me.lblSegs.Text = "00"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Silver
+        Me.Label3.Location = New System.Drawing.Point(111, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(42, 56)
+        Me.Label3.TabIndex = 56
+        Me.Label3.Text = ":"
+        '
+        'lblMin
+        '
+        Me.lblMin.AutoSize = True
+        Me.lblMin.BackColor = System.Drawing.Color.Transparent
+        Me.lblMin.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMin.ForeColor = System.Drawing.Color.Silver
+        Me.lblMin.Location = New System.Drawing.Point(13, 1)
+        Me.lblMin.Name = "lblMin"
+        Me.lblMin.Size = New System.Drawing.Size(92, 56)
+        Me.lblMin.TabIndex = 55
+        Me.lblMin.Text = "00"
         '
         'Btn10_0
         '
@@ -4067,7 +4151,7 @@ Partial Class NivelDificil
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.ProyectoBuscaminas.My.Resources.Resources.GifBuscaminas
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(1180, 970)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -4083,7 +4167,7 @@ Partial Class NivelDificil
         Me.PanelSuperior.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelSuperior.ForeColor = System.Drawing.Color.Transparent
         Me.PanelSuperior.Location = New System.Drawing.Point(0, 0)
-        Me.PanelSuperior.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PanelSuperior.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelSuperior.Name = "PanelSuperior"
         Me.PanelSuperior.Size = New System.Drawing.Size(1180, 105)
         Me.PanelSuperior.TabIndex = 499
@@ -4109,7 +4193,7 @@ Partial Class NivelDificil
         Me.btnMenuPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMenuPrincipal.Font = New System.Drawing.Font("Georgia", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMenuPrincipal.Location = New System.Drawing.Point(16, 18)
-        Me.btnMenuPrincipal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnMenuPrincipal.Margin = New System.Windows.Forms.Padding(4)
         Me.btnMenuPrincipal.Name = "btnMenuPrincipal"
         Me.btnMenuPrincipal.Size = New System.Drawing.Size(159, 66)
         Me.btnMenuPrincipal.TabIndex = 6
@@ -4126,7 +4210,7 @@ Partial Class NivelDificil
         Me.btnSalirJuego.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSalirJuego.Font = New System.Drawing.Font("Georgia", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSalirJuego.Location = New System.Drawing.Point(991, 18)
-        Me.btnSalirJuego.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSalirJuego.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSalirJuego.Name = "btnSalirJuego"
         Me.btnSalirJuego.Size = New System.Drawing.Size(152, 66)
         Me.btnSalirJuego.TabIndex = 5
@@ -4145,6 +4229,8 @@ Partial Class NivelDificil
         Me.Name = "NivelDificil"
         Me.Text = "NivelDificil"
         Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelSuperior.ResumeLayout(False)
         Me.PanelSuperior.PerformLayout()
@@ -4447,4 +4533,11 @@ Partial Class NivelDificil
     Friend WithEvents btnMenuPrincipal As Button
     Friend WithEvents btnSalirJuego As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents TimerDificil As Timer
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents lblMiliSegs As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents lblSegs As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents lblMin As Label
 End Class

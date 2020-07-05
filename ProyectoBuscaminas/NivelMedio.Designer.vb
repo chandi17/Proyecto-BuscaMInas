@@ -24,6 +24,12 @@ Partial Class NivelMedio
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.lblMiliSegs = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblSegs = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblMin = New System.Windows.Forms.Label()
         Me.Btn10_0 = New System.Windows.Forms.Button()
         Me.Btn9_0 = New System.Windows.Forms.Button()
         Me.Btn8_0 = New System.Windows.Forms.Button()
@@ -175,16 +181,10 @@ Partial Class NivelMedio
         Me.btnMenuPrincipal = New System.Windows.Forms.Button()
         Me.btnSalirJuego = New System.Windows.Forms.Button()
         Me.TimerMedio = New System.Windows.Forms.Timer(Me.components)
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.lblMiliSegs = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.lblSegs = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblMin = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelSuperior.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -343,9 +343,84 @@ Partial Class NivelMedio
         Me.Panel1.Size = New System.Drawing.Size(1053, 750)
         Me.Panel1.TabIndex = 101
         '
+        'Panel2
+        '
+        Me.Panel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel2.Controls.Add(Me.lblMiliSegs)
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.lblSegs)
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.lblMin)
+        Me.Panel2.ForeColor = System.Drawing.Color.Transparent
+        Me.Panel2.Location = New System.Drawing.Point(349, 113)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(400, 64)
+        Me.Panel2.TabIndex = 339
+        '
+        'lblMiliSegs
+        '
+        Me.lblMiliSegs.AutoSize = True
+        Me.lblMiliSegs.BackColor = System.Drawing.Color.Transparent
+        Me.lblMiliSegs.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMiliSegs.ForeColor = System.Drawing.Color.Silver
+        Me.lblMiliSegs.Location = New System.Drawing.Point(305, 0)
+        Me.lblMiliSegs.Name = "lblMiliSegs"
+        Me.lblMiliSegs.Size = New System.Drawing.Size(92, 56)
+        Me.lblMiliSegs.TabIndex = 53
+        Me.lblMiliSegs.Text = "00"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Silver
+        Me.Label2.Location = New System.Drawing.Point(257, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(42, 56)
+        Me.Label2.TabIndex = 57
+        Me.Label2.Text = ":"
+        '
+        'lblSegs
+        '
+        Me.lblSegs.AutoSize = True
+        Me.lblSegs.BackColor = System.Drawing.Color.Transparent
+        Me.lblSegs.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSegs.ForeColor = System.Drawing.Color.Silver
+        Me.lblSegs.Location = New System.Drawing.Point(159, 0)
+        Me.lblSegs.Name = "lblSegs"
+        Me.lblSegs.Size = New System.Drawing.Size(92, 56)
+        Me.lblSegs.TabIndex = 54
+        Me.lblSegs.Text = "00"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Silver
+        Me.Label3.Location = New System.Drawing.Point(111, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(42, 56)
+        Me.Label3.TabIndex = 56
+        Me.Label3.Text = ":"
+        '
+        'lblMin
+        '
+        Me.lblMin.AutoSize = True
+        Me.lblMin.BackColor = System.Drawing.Color.Transparent
+        Me.lblMin.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMin.ForeColor = System.Drawing.Color.Silver
+        Me.lblMin.Location = New System.Drawing.Point(13, 1)
+        Me.lblMin.Name = "lblMin"
+        Me.lblMin.Size = New System.Drawing.Size(92, 56)
+        Me.lblMin.TabIndex = 55
+        Me.lblMin.Text = "00"
+        '
         'Btn10_0
         '
         Me.Btn10_0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn10_0.ForeColor = System.Drawing.Color.Black
         Me.Btn10_0.Location = New System.Drawing.Point(263, 622)
         Me.Btn10_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn10_0.Name = "Btn10_0"
@@ -358,6 +433,7 @@ Partial Class NivelMedio
         'Btn9_0
         '
         Me.Btn9_0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn9_0.ForeColor = System.Drawing.Color.Black
         Me.Btn9_0.Location = New System.Drawing.Point(263, 575)
         Me.Btn9_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn9_0.Name = "Btn9_0"
@@ -370,6 +446,7 @@ Partial Class NivelMedio
         'Btn8_0
         '
         Me.Btn8_0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn8_0.ForeColor = System.Drawing.Color.Black
         Me.Btn8_0.Location = New System.Drawing.Point(263, 529)
         Me.Btn8_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn8_0.Name = "Btn8_0"
@@ -382,6 +459,7 @@ Partial Class NivelMedio
         'Btn7_0
         '
         Me.Btn7_0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn7_0.ForeColor = System.Drawing.Color.Black
         Me.Btn7_0.Location = New System.Drawing.Point(263, 484)
         Me.Btn7_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn7_0.Name = "Btn7_0"
@@ -394,6 +472,7 @@ Partial Class NivelMedio
         'Btn6_0
         '
         Me.Btn6_0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn6_0.ForeColor = System.Drawing.Color.Black
         Me.Btn6_0.Location = New System.Drawing.Point(263, 437)
         Me.Btn6_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn6_0.Name = "Btn6_0"
@@ -406,6 +485,7 @@ Partial Class NivelMedio
         'Btn10_11
         '
         Me.Btn10_11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn10_11.ForeColor = System.Drawing.Color.Black
         Me.Btn10_11.Location = New System.Drawing.Point(800, 623)
         Me.Btn10_11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn10_11.Name = "Btn10_11"
@@ -418,6 +498,7 @@ Partial Class NivelMedio
         'Btn9_11
         '
         Me.Btn9_11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn9_11.ForeColor = System.Drawing.Color.Black
         Me.Btn9_11.Location = New System.Drawing.Point(800, 576)
         Me.Btn9_11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn9_11.Name = "Btn9_11"
@@ -430,6 +511,7 @@ Partial Class NivelMedio
         'Btn8_11
         '
         Me.Btn8_11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn8_11.ForeColor = System.Drawing.Color.Black
         Me.Btn8_11.Location = New System.Drawing.Point(800, 530)
         Me.Btn8_11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn8_11.Name = "Btn8_11"
@@ -442,6 +524,7 @@ Partial Class NivelMedio
         'Btn7_11
         '
         Me.Btn7_11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn7_11.ForeColor = System.Drawing.Color.Black
         Me.Btn7_11.Location = New System.Drawing.Point(800, 485)
         Me.Btn7_11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn7_11.Name = "Btn7_11"
@@ -454,6 +537,7 @@ Partial Class NivelMedio
         'Btn6_11
         '
         Me.Btn6_11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn6_11.ForeColor = System.Drawing.Color.Black
         Me.Btn6_11.Location = New System.Drawing.Point(800, 438)
         Me.Btn6_11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn6_11.Name = "Btn6_11"
@@ -467,6 +551,7 @@ Partial Class NivelMedio
         '
         Me.Btn6_6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn6_6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_6.ForeColor = System.Drawing.Color.Black
         Me.Btn6_6.Location = New System.Drawing.Point(553, 436)
         Me.Btn6_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn6_6.Name = "Btn6_6"
@@ -479,6 +564,7 @@ Partial Class NivelMedio
         '
         Me.Btn6_7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn6_7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_7.ForeColor = System.Drawing.Color.Black
         Me.Btn6_7.Location = New System.Drawing.Point(600, 436)
         Me.Btn6_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn6_7.Name = "Btn6_7"
@@ -491,6 +577,7 @@ Partial Class NivelMedio
         '
         Me.Btn10_10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn10_10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn10_10.ForeColor = System.Drawing.Color.Black
         Me.Btn10_10.Location = New System.Drawing.Point(738, 621)
         Me.Btn10_10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn10_10.Name = "Btn10_10"
@@ -503,6 +590,7 @@ Partial Class NivelMedio
         '
         Me.Btn7_6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn7_6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn7_6.ForeColor = System.Drawing.Color.Black
         Me.Btn7_6.Location = New System.Drawing.Point(554, 483)
         Me.Btn7_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn7_6.Name = "Btn7_6"
@@ -515,6 +603,7 @@ Partial Class NivelMedio
         '
         Me.Btn10_9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn10_9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn10_9.ForeColor = System.Drawing.Color.Black
         Me.Btn10_9.Location = New System.Drawing.Point(692, 621)
         Me.Btn10_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn10_9.Name = "Btn10_9"
@@ -527,6 +616,7 @@ Partial Class NivelMedio
         '
         Me.Btn7_7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn7_7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn7_7.ForeColor = System.Drawing.Color.Black
         Me.Btn7_7.Location = New System.Drawing.Point(600, 483)
         Me.Btn7_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn7_7.Name = "Btn7_7"
@@ -539,6 +629,7 @@ Partial Class NivelMedio
         '
         Me.Btn9_10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn9_10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn9_10.ForeColor = System.Drawing.Color.Black
         Me.Btn9_10.Location = New System.Drawing.Point(738, 574)
         Me.Btn9_10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn9_10.Name = "Btn9_10"
@@ -551,6 +642,7 @@ Partial Class NivelMedio
         '
         Me.Btn6_8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn6_8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_8.ForeColor = System.Drawing.Color.Black
         Me.Btn6_8.Location = New System.Drawing.Point(645, 436)
         Me.Btn6_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn6_8.Name = "Btn6_8"
@@ -563,6 +655,7 @@ Partial Class NivelMedio
         '
         Me.Btn9_9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn9_9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn9_9.ForeColor = System.Drawing.Color.Black
         Me.Btn9_9.Location = New System.Drawing.Point(692, 574)
         Me.Btn9_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn9_9.Name = "Btn9_9"
@@ -575,6 +668,7 @@ Partial Class NivelMedio
         '
         Me.Btn7_8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn7_8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn7_8.ForeColor = System.Drawing.Color.Black
         Me.Btn7_8.Location = New System.Drawing.Point(645, 483)
         Me.Btn7_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn7_8.Name = "Btn7_8"
@@ -587,6 +681,7 @@ Partial Class NivelMedio
         '
         Me.Btn10_8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn10_8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn10_8.ForeColor = System.Drawing.Color.Black
         Me.Btn10_8.Location = New System.Drawing.Point(645, 621)
         Me.Btn10_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn10_8.Name = "Btn10_8"
@@ -599,6 +694,7 @@ Partial Class NivelMedio
         '
         Me.Btn8_6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn8_6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn8_6.ForeColor = System.Drawing.Color.Black
         Me.Btn8_6.Location = New System.Drawing.Point(554, 528)
         Me.Btn8_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn8_6.Name = "Btn8_6"
@@ -611,6 +707,7 @@ Partial Class NivelMedio
         '
         Me.Btn10_7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn10_7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn10_7.ForeColor = System.Drawing.Color.Black
         Me.Btn10_7.Location = New System.Drawing.Point(600, 621)
         Me.Btn10_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn10_7.Name = "Btn10_7"
@@ -623,6 +720,7 @@ Partial Class NivelMedio
         '
         Me.Btn8_7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn8_7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn8_7.ForeColor = System.Drawing.Color.Black
         Me.Btn8_7.Location = New System.Drawing.Point(600, 528)
         Me.Btn8_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn8_7.Name = "Btn8_7"
@@ -635,6 +733,7 @@ Partial Class NivelMedio
         '
         Me.Btn10_6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn10_6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn10_6.ForeColor = System.Drawing.Color.Black
         Me.Btn10_6.Location = New System.Drawing.Point(554, 621)
         Me.Btn10_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn10_6.Name = "Btn10_6"
@@ -647,6 +746,7 @@ Partial Class NivelMedio
         '
         Me.Btn8_8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn8_8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn8_8.ForeColor = System.Drawing.Color.Black
         Me.Btn8_8.Location = New System.Drawing.Point(645, 528)
         Me.Btn8_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn8_8.Name = "Btn8_8"
@@ -659,6 +759,7 @@ Partial Class NivelMedio
         '
         Me.Btn9_8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn9_8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn9_8.ForeColor = System.Drawing.Color.Black
         Me.Btn9_8.Location = New System.Drawing.Point(645, 574)
         Me.Btn9_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn9_8.Name = "Btn9_8"
@@ -671,6 +772,7 @@ Partial Class NivelMedio
         '
         Me.Btn6_9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn6_9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_9.ForeColor = System.Drawing.Color.Black
         Me.Btn6_9.Location = New System.Drawing.Point(692, 436)
         Me.Btn6_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn6_9.Name = "Btn6_9"
@@ -683,6 +785,7 @@ Partial Class NivelMedio
         '
         Me.Btn9_7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn9_7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn9_7.ForeColor = System.Drawing.Color.Black
         Me.Btn9_7.Location = New System.Drawing.Point(600, 574)
         Me.Btn9_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn9_7.Name = "Btn9_7"
@@ -695,6 +798,7 @@ Partial Class NivelMedio
         '
         Me.Btn6_10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn6_10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_10.ForeColor = System.Drawing.Color.Black
         Me.Btn6_10.Location = New System.Drawing.Point(738, 436)
         Me.Btn6_10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn6_10.Name = "Btn6_10"
@@ -707,6 +811,7 @@ Partial Class NivelMedio
         '
         Me.Btn9_6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn9_6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn9_6.ForeColor = System.Drawing.Color.Black
         Me.Btn9_6.Location = New System.Drawing.Point(554, 574)
         Me.Btn9_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn9_6.Name = "Btn9_6"
@@ -719,6 +824,7 @@ Partial Class NivelMedio
         '
         Me.Btn7_9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn7_9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn7_9.ForeColor = System.Drawing.Color.Black
         Me.Btn7_9.Location = New System.Drawing.Point(692, 483)
         Me.Btn7_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn7_9.Name = "Btn7_9"
@@ -731,6 +837,7 @@ Partial Class NivelMedio
         '
         Me.Btn8_10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn8_10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn8_10.ForeColor = System.Drawing.Color.Black
         Me.Btn8_10.Location = New System.Drawing.Point(738, 528)
         Me.Btn8_10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn8_10.Name = "Btn8_10"
@@ -743,6 +850,7 @@ Partial Class NivelMedio
         '
         Me.Btn7_10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn7_10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn7_10.ForeColor = System.Drawing.Color.Black
         Me.Btn7_10.Location = New System.Drawing.Point(738, 483)
         Me.Btn7_10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn7_10.Name = "Btn7_10"
@@ -755,6 +863,7 @@ Partial Class NivelMedio
         '
         Me.Btn8_9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn8_9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn8_9.ForeColor = System.Drawing.Color.Black
         Me.Btn8_9.Location = New System.Drawing.Point(692, 528)
         Me.Btn8_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn8_9.Name = "Btn8_9"
@@ -767,6 +876,7 @@ Partial Class NivelMedio
         '
         Me.Btn6_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn6_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_1.ForeColor = System.Drawing.Color.Black
         Me.Btn6_1.Location = New System.Drawing.Point(324, 436)
         Me.Btn6_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn6_1.Name = "Btn6_1"
@@ -779,6 +889,7 @@ Partial Class NivelMedio
         '
         Me.Btn6_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn6_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_2.ForeColor = System.Drawing.Color.Black
         Me.Btn6_2.Location = New System.Drawing.Point(370, 436)
         Me.Btn6_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn6_2.Name = "Btn6_2"
@@ -791,6 +902,7 @@ Partial Class NivelMedio
         '
         Me.Btn10_5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn10_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn10_5.ForeColor = System.Drawing.Color.Black
         Me.Btn10_5.Location = New System.Drawing.Point(509, 621)
         Me.Btn10_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn10_5.Name = "Btn10_5"
@@ -803,6 +915,7 @@ Partial Class NivelMedio
         '
         Me.Btn7_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn7_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn7_1.ForeColor = System.Drawing.Color.Black
         Me.Btn7_1.Location = New System.Drawing.Point(325, 483)
         Me.Btn7_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn7_1.Name = "Btn7_1"
@@ -815,6 +928,7 @@ Partial Class NivelMedio
         '
         Me.Btn10_4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn10_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn10_4.ForeColor = System.Drawing.Color.Black
         Me.Btn10_4.Location = New System.Drawing.Point(462, 621)
         Me.Btn10_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn10_4.Name = "Btn10_4"
@@ -827,6 +941,7 @@ Partial Class NivelMedio
         '
         Me.Btn7_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn7_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn7_2.ForeColor = System.Drawing.Color.Black
         Me.Btn7_2.Location = New System.Drawing.Point(370, 483)
         Me.Btn7_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn7_2.Name = "Btn7_2"
@@ -839,6 +954,7 @@ Partial Class NivelMedio
         '
         Me.Btn9_5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn9_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn9_5.ForeColor = System.Drawing.Color.Black
         Me.Btn9_5.Location = New System.Drawing.Point(509, 574)
         Me.Btn9_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn9_5.Name = "Btn9_5"
@@ -851,6 +967,7 @@ Partial Class NivelMedio
         '
         Me.Btn6_3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn6_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_3.ForeColor = System.Drawing.Color.Black
         Me.Btn6_3.Location = New System.Drawing.Point(416, 436)
         Me.Btn6_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn6_3.Name = "Btn6_3"
@@ -863,6 +980,7 @@ Partial Class NivelMedio
         '
         Me.Btn9_4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn9_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn9_4.ForeColor = System.Drawing.Color.Black
         Me.Btn9_4.Location = New System.Drawing.Point(462, 574)
         Me.Btn9_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn9_4.Name = "Btn9_4"
@@ -875,6 +993,7 @@ Partial Class NivelMedio
         '
         Me.Btn7_3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn7_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn7_3.ForeColor = System.Drawing.Color.Black
         Me.Btn7_3.Location = New System.Drawing.Point(416, 483)
         Me.Btn7_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn7_3.Name = "Btn7_3"
@@ -887,6 +1006,7 @@ Partial Class NivelMedio
         '
         Me.Btn10_3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn10_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn10_3.ForeColor = System.Drawing.Color.Black
         Me.Btn10_3.Location = New System.Drawing.Point(416, 621)
         Me.Btn10_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn10_3.Name = "Btn10_3"
@@ -899,6 +1019,7 @@ Partial Class NivelMedio
         '
         Me.Btn8_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn8_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn8_1.ForeColor = System.Drawing.Color.Black
         Me.Btn8_1.Location = New System.Drawing.Point(325, 528)
         Me.Btn8_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn8_1.Name = "Btn8_1"
@@ -911,6 +1032,7 @@ Partial Class NivelMedio
         '
         Me.Btn10_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn10_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn10_2.ForeColor = System.Drawing.Color.Black
         Me.Btn10_2.Location = New System.Drawing.Point(370, 621)
         Me.Btn10_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn10_2.Name = "Btn10_2"
@@ -923,6 +1045,7 @@ Partial Class NivelMedio
         '
         Me.Btn8_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn8_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn8_2.ForeColor = System.Drawing.Color.Black
         Me.Btn8_2.Location = New System.Drawing.Point(370, 528)
         Me.Btn8_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn8_2.Name = "Btn8_2"
@@ -935,6 +1058,7 @@ Partial Class NivelMedio
         '
         Me.Btn10_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn10_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn10_1.ForeColor = System.Drawing.Color.Black
         Me.Btn10_1.Location = New System.Drawing.Point(325, 621)
         Me.Btn10_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn10_1.Name = "Btn10_1"
@@ -947,6 +1071,7 @@ Partial Class NivelMedio
         '
         Me.Btn8_3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn8_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn8_3.ForeColor = System.Drawing.Color.Black
         Me.Btn8_3.Location = New System.Drawing.Point(416, 528)
         Me.Btn8_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn8_3.Name = "Btn8_3"
@@ -959,6 +1084,7 @@ Partial Class NivelMedio
         '
         Me.Btn9_3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn9_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn9_3.ForeColor = System.Drawing.Color.Black
         Me.Btn9_3.Location = New System.Drawing.Point(416, 574)
         Me.Btn9_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn9_3.Name = "Btn9_3"
@@ -971,6 +1097,7 @@ Partial Class NivelMedio
         '
         Me.Btn6_4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn6_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_4.ForeColor = System.Drawing.Color.Black
         Me.Btn6_4.Location = New System.Drawing.Point(462, 436)
         Me.Btn6_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn6_4.Name = "Btn6_4"
@@ -983,6 +1110,7 @@ Partial Class NivelMedio
         '
         Me.Btn9_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn9_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn9_2.ForeColor = System.Drawing.Color.Black
         Me.Btn9_2.Location = New System.Drawing.Point(370, 574)
         Me.Btn9_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn9_2.Name = "Btn9_2"
@@ -995,6 +1123,7 @@ Partial Class NivelMedio
         '
         Me.Btn6_5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn6_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn6_5.ForeColor = System.Drawing.Color.Black
         Me.Btn6_5.Location = New System.Drawing.Point(509, 436)
         Me.Btn6_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn6_5.Name = "Btn6_5"
@@ -1007,6 +1136,7 @@ Partial Class NivelMedio
         '
         Me.Btn9_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn9_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn9_1.ForeColor = System.Drawing.Color.Black
         Me.Btn9_1.Location = New System.Drawing.Point(325, 574)
         Me.Btn9_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn9_1.Name = "Btn9_1"
@@ -1019,6 +1149,7 @@ Partial Class NivelMedio
         '
         Me.Btn7_4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn7_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn7_4.ForeColor = System.Drawing.Color.Black
         Me.Btn7_4.Location = New System.Drawing.Point(462, 483)
         Me.Btn7_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn7_4.Name = "Btn7_4"
@@ -1031,6 +1162,7 @@ Partial Class NivelMedio
         '
         Me.Btn8_5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn8_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn8_5.ForeColor = System.Drawing.Color.Black
         Me.Btn8_5.Location = New System.Drawing.Point(509, 528)
         Me.Btn8_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn8_5.Name = "Btn8_5"
@@ -1043,6 +1175,7 @@ Partial Class NivelMedio
         '
         Me.Btn7_5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn7_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn7_5.ForeColor = System.Drawing.Color.Black
         Me.Btn7_5.Location = New System.Drawing.Point(509, 483)
         Me.Btn7_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn7_5.Name = "Btn7_5"
@@ -1055,6 +1188,7 @@ Partial Class NivelMedio
         '
         Me.Btn8_4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn8_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn8_4.ForeColor = System.Drawing.Color.Black
         Me.Btn8_4.Location = New System.Drawing.Point(462, 528)
         Me.Btn8_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn8_4.Name = "Btn8_4"
@@ -1066,6 +1200,7 @@ Partial Class NivelMedio
         'Btn11_10
         '
         Me.Btn11_10.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn11_10.ForeColor = System.Drawing.Color.Black
         Me.Btn11_10.Location = New System.Drawing.Point(737, 677)
         Me.Btn11_10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn11_10.Name = "Btn11_10"
@@ -1078,6 +1213,7 @@ Partial Class NivelMedio
         'Btn11_9
         '
         Me.Btn11_9.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn11_9.ForeColor = System.Drawing.Color.Black
         Me.Btn11_9.Location = New System.Drawing.Point(692, 677)
         Me.Btn11_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn11_9.Name = "Btn11_9"
@@ -1090,6 +1226,7 @@ Partial Class NivelMedio
         'Btn11_8
         '
         Me.Btn11_8.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn11_8.ForeColor = System.Drawing.Color.Black
         Me.Btn11_8.Location = New System.Drawing.Point(644, 677)
         Me.Btn11_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn11_8.Name = "Btn11_8"
@@ -1102,6 +1239,7 @@ Partial Class NivelMedio
         'Btn11_7
         '
         Me.Btn11_7.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn11_7.ForeColor = System.Drawing.Color.Black
         Me.Btn11_7.Location = New System.Drawing.Point(599, 677)
         Me.Btn11_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn11_7.Name = "Btn11_7"
@@ -1114,6 +1252,7 @@ Partial Class NivelMedio
         'Btn11_6
         '
         Me.Btn11_6.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn11_6.ForeColor = System.Drawing.Color.Black
         Me.Btn11_6.Location = New System.Drawing.Point(552, 677)
         Me.Btn11_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn11_6.Name = "Btn11_6"
@@ -1126,6 +1265,7 @@ Partial Class NivelMedio
         'Btn0_10
         '
         Me.Btn0_10.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn0_10.ForeColor = System.Drawing.Color.Black
         Me.Btn0_10.Location = New System.Drawing.Point(737, 138)
         Me.Btn0_10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn0_10.Name = "Btn0_10"
@@ -1138,6 +1278,7 @@ Partial Class NivelMedio
         'Btn0_9
         '
         Me.Btn0_9.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn0_9.ForeColor = System.Drawing.Color.Black
         Me.Btn0_9.Location = New System.Drawing.Point(692, 138)
         Me.Btn0_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn0_9.Name = "Btn0_9"
@@ -1150,6 +1291,7 @@ Partial Class NivelMedio
         'Btn0_8
         '
         Me.Btn0_8.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn0_8.ForeColor = System.Drawing.Color.Black
         Me.Btn0_8.Location = New System.Drawing.Point(644, 138)
         Me.Btn0_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn0_8.Name = "Btn0_8"
@@ -1162,6 +1304,7 @@ Partial Class NivelMedio
         'Btn0_7
         '
         Me.Btn0_7.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn0_7.ForeColor = System.Drawing.Color.Black
         Me.Btn0_7.Location = New System.Drawing.Point(599, 138)
         Me.Btn0_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn0_7.Name = "Btn0_7"
@@ -1174,6 +1317,7 @@ Partial Class NivelMedio
         'Btn0_6
         '
         Me.Btn0_6.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn0_6.ForeColor = System.Drawing.Color.Black
         Me.Btn0_6.Location = New System.Drawing.Point(552, 138)
         Me.Btn0_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn0_6.Name = "Btn0_6"
@@ -1187,6 +1331,7 @@ Partial Class NivelMedio
         '
         Me.Btn1_6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn1_6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_6.ForeColor = System.Drawing.Color.Black
         Me.Btn1_6.Location = New System.Drawing.Point(553, 205)
         Me.Btn1_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn1_6.Name = "Btn1_6"
@@ -1199,6 +1344,7 @@ Partial Class NivelMedio
         '
         Me.Btn1_7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn1_7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_7.ForeColor = System.Drawing.Color.Black
         Me.Btn1_7.Location = New System.Drawing.Point(600, 205)
         Me.Btn1_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn1_7.Name = "Btn1_7"
@@ -1211,6 +1357,7 @@ Partial Class NivelMedio
         '
         Me.Btn5_10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn5_10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_10.ForeColor = System.Drawing.Color.Black
         Me.Btn5_10.Location = New System.Drawing.Point(738, 389)
         Me.Btn5_10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn5_10.Name = "Btn5_10"
@@ -1223,6 +1370,7 @@ Partial Class NivelMedio
         '
         Me.Btn2_6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn2_6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_6.ForeColor = System.Drawing.Color.Black
         Me.Btn2_6.Location = New System.Drawing.Point(554, 251)
         Me.Btn2_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn2_6.Name = "Btn2_6"
@@ -1235,6 +1383,7 @@ Partial Class NivelMedio
         '
         Me.Btn5_9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn5_9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_9.ForeColor = System.Drawing.Color.Black
         Me.Btn5_9.Location = New System.Drawing.Point(692, 389)
         Me.Btn5_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn5_9.Name = "Btn5_9"
@@ -1247,6 +1396,7 @@ Partial Class NivelMedio
         '
         Me.Btn2_7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn2_7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_7.ForeColor = System.Drawing.Color.Black
         Me.Btn2_7.Location = New System.Drawing.Point(600, 251)
         Me.Btn2_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn2_7.Name = "Btn2_7"
@@ -1259,6 +1409,7 @@ Partial Class NivelMedio
         '
         Me.Btn4_10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn4_10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_10.ForeColor = System.Drawing.Color.Black
         Me.Btn4_10.Location = New System.Drawing.Point(738, 342)
         Me.Btn4_10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn4_10.Name = "Btn4_10"
@@ -1271,6 +1422,7 @@ Partial Class NivelMedio
         '
         Me.Btn1_8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn1_8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_8.ForeColor = System.Drawing.Color.Black
         Me.Btn1_8.Location = New System.Drawing.Point(645, 205)
         Me.Btn1_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn1_8.Name = "Btn1_8"
@@ -1283,6 +1435,7 @@ Partial Class NivelMedio
         '
         Me.Btn4_9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn4_9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_9.ForeColor = System.Drawing.Color.Black
         Me.Btn4_9.Location = New System.Drawing.Point(692, 342)
         Me.Btn4_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn4_9.Name = "Btn4_9"
@@ -1295,6 +1448,7 @@ Partial Class NivelMedio
         '
         Me.Btn2_8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn2_8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_8.ForeColor = System.Drawing.Color.Black
         Me.Btn2_8.Location = New System.Drawing.Point(645, 251)
         Me.Btn2_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn2_8.Name = "Btn2_8"
@@ -1307,6 +1461,7 @@ Partial Class NivelMedio
         '
         Me.Btn5_8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn5_8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_8.ForeColor = System.Drawing.Color.Black
         Me.Btn5_8.Location = New System.Drawing.Point(645, 389)
         Me.Btn5_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn5_8.Name = "Btn5_8"
@@ -1319,6 +1474,7 @@ Partial Class NivelMedio
         '
         Me.Btn3_6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn3_6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_6.ForeColor = System.Drawing.Color.Black
         Me.Btn3_6.Location = New System.Drawing.Point(554, 297)
         Me.Btn3_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn3_6.Name = "Btn3_6"
@@ -1331,6 +1487,7 @@ Partial Class NivelMedio
         '
         Me.Btn5_7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn5_7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_7.ForeColor = System.Drawing.Color.Black
         Me.Btn5_7.Location = New System.Drawing.Point(600, 389)
         Me.Btn5_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn5_7.Name = "Btn5_7"
@@ -1343,6 +1500,7 @@ Partial Class NivelMedio
         '
         Me.Btn3_7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn3_7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_7.ForeColor = System.Drawing.Color.Black
         Me.Btn3_7.Location = New System.Drawing.Point(600, 297)
         Me.Btn3_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn3_7.Name = "Btn3_7"
@@ -1355,6 +1513,7 @@ Partial Class NivelMedio
         '
         Me.Btn5_6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn5_6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_6.ForeColor = System.Drawing.Color.Black
         Me.Btn5_6.Location = New System.Drawing.Point(554, 389)
         Me.Btn5_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn5_6.Name = "Btn5_6"
@@ -1367,6 +1526,7 @@ Partial Class NivelMedio
         '
         Me.Btn3_8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn3_8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_8.ForeColor = System.Drawing.Color.Black
         Me.Btn3_8.Location = New System.Drawing.Point(645, 297)
         Me.Btn3_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn3_8.Name = "Btn3_8"
@@ -1379,6 +1539,7 @@ Partial Class NivelMedio
         '
         Me.Btn4_8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn4_8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_8.ForeColor = System.Drawing.Color.Black
         Me.Btn4_8.Location = New System.Drawing.Point(645, 342)
         Me.Btn4_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn4_8.Name = "Btn4_8"
@@ -1391,6 +1552,7 @@ Partial Class NivelMedio
         '
         Me.Btn1_9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn1_9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_9.ForeColor = System.Drawing.Color.Black
         Me.Btn1_9.Location = New System.Drawing.Point(692, 205)
         Me.Btn1_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn1_9.Name = "Btn1_9"
@@ -1403,6 +1565,7 @@ Partial Class NivelMedio
         '
         Me.Btn4_7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn4_7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_7.ForeColor = System.Drawing.Color.Black
         Me.Btn4_7.Location = New System.Drawing.Point(600, 342)
         Me.Btn4_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn4_7.Name = "Btn4_7"
@@ -1415,6 +1578,7 @@ Partial Class NivelMedio
         '
         Me.Btn1_10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn1_10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_10.ForeColor = System.Drawing.Color.Black
         Me.Btn1_10.Location = New System.Drawing.Point(738, 205)
         Me.Btn1_10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn1_10.Name = "Btn1_10"
@@ -1427,6 +1591,7 @@ Partial Class NivelMedio
         '
         Me.Btn4_6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn4_6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_6.ForeColor = System.Drawing.Color.Black
         Me.Btn4_6.Location = New System.Drawing.Point(554, 342)
         Me.Btn4_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn4_6.Name = "Btn4_6"
@@ -1439,6 +1604,7 @@ Partial Class NivelMedio
         '
         Me.Btn2_9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn2_9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_9.ForeColor = System.Drawing.Color.Black
         Me.Btn2_9.Location = New System.Drawing.Point(692, 251)
         Me.Btn2_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn2_9.Name = "Btn2_9"
@@ -1451,6 +1617,7 @@ Partial Class NivelMedio
         '
         Me.Btn3_10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn3_10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_10.ForeColor = System.Drawing.Color.Black
         Me.Btn3_10.Location = New System.Drawing.Point(738, 297)
         Me.Btn3_10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn3_10.Name = "Btn3_10"
@@ -1463,6 +1630,7 @@ Partial Class NivelMedio
         '
         Me.Btn2_10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn2_10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_10.ForeColor = System.Drawing.Color.Black
         Me.Btn2_10.Location = New System.Drawing.Point(738, 251)
         Me.Btn2_10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn2_10.Name = "Btn2_10"
@@ -1475,6 +1643,7 @@ Partial Class NivelMedio
         '
         Me.Btn3_9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn3_9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_9.ForeColor = System.Drawing.Color.Black
         Me.Btn3_9.Location = New System.Drawing.Point(692, 297)
         Me.Btn3_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn3_9.Name = "Btn3_9"
@@ -1486,6 +1655,7 @@ Partial Class NivelMedio
         'Btn11_0
         '
         Me.Btn11_0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn11_0.ForeColor = System.Drawing.Color.Black
         Me.Btn11_0.Location = New System.Drawing.Point(263, 677)
         Me.Btn11_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn11_0.Name = "Btn11_0"
@@ -1498,6 +1668,7 @@ Partial Class NivelMedio
         'Btn5_0
         '
         Me.Btn5_0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn5_0.ForeColor = System.Drawing.Color.Black
         Me.Btn5_0.Location = New System.Drawing.Point(263, 390)
         Me.Btn5_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn5_0.Name = "Btn5_0"
@@ -1510,6 +1681,7 @@ Partial Class NivelMedio
         'Btn4_0
         '
         Me.Btn4_0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn4_0.ForeColor = System.Drawing.Color.Black
         Me.Btn4_0.Location = New System.Drawing.Point(263, 343)
         Me.Btn4_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn4_0.Name = "Btn4_0"
@@ -1522,6 +1694,7 @@ Partial Class NivelMedio
         'Btn3_0
         '
         Me.Btn3_0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn3_0.ForeColor = System.Drawing.Color.Black
         Me.Btn3_0.Location = New System.Drawing.Point(263, 298)
         Me.Btn3_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn3_0.Name = "Btn3_0"
@@ -1534,6 +1707,7 @@ Partial Class NivelMedio
         'Btn2_0
         '
         Me.Btn2_0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn2_0.ForeColor = System.Drawing.Color.Black
         Me.Btn2_0.Location = New System.Drawing.Point(263, 252)
         Me.Btn2_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn2_0.Name = "Btn2_0"
@@ -1546,6 +1720,7 @@ Partial Class NivelMedio
         'Btn1_0
         '
         Me.Btn1_0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn1_0.ForeColor = System.Drawing.Color.Black
         Me.Btn1_0.Location = New System.Drawing.Point(263, 206)
         Me.Btn1_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn1_0.Name = "Btn1_0"
@@ -1558,6 +1733,7 @@ Partial Class NivelMedio
         'Btn0_0
         '
         Me.Btn0_0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn0_0.ForeColor = System.Drawing.Color.Black
         Me.Btn0_0.Location = New System.Drawing.Point(263, 138)
         Me.Btn0_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn0_0.Name = "Btn0_0"
@@ -1570,6 +1746,7 @@ Partial Class NivelMedio
         'Btn11_5
         '
         Me.Btn11_5.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn11_5.ForeColor = System.Drawing.Color.Black
         Me.Btn11_5.Location = New System.Drawing.Point(508, 677)
         Me.Btn11_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn11_5.Name = "Btn11_5"
@@ -1582,6 +1759,7 @@ Partial Class NivelMedio
         'Btn11_4
         '
         Me.Btn11_4.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn11_4.ForeColor = System.Drawing.Color.Black
         Me.Btn11_4.Location = New System.Drawing.Point(463, 677)
         Me.Btn11_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn11_4.Name = "Btn11_4"
@@ -1594,6 +1772,7 @@ Partial Class NivelMedio
         'Btn11_3
         '
         Me.Btn11_3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn11_3.ForeColor = System.Drawing.Color.Black
         Me.Btn11_3.Location = New System.Drawing.Point(415, 677)
         Me.Btn11_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn11_3.Name = "Btn11_3"
@@ -1606,6 +1785,7 @@ Partial Class NivelMedio
         'Btn11_2
         '
         Me.Btn11_2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn11_2.ForeColor = System.Drawing.Color.Black
         Me.Btn11_2.Location = New System.Drawing.Point(369, 677)
         Me.Btn11_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn11_2.Name = "Btn11_2"
@@ -1618,6 +1798,7 @@ Partial Class NivelMedio
         'Btn11_1
         '
         Me.Btn11_1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn11_1.ForeColor = System.Drawing.Color.Black
         Me.Btn11_1.Location = New System.Drawing.Point(323, 677)
         Me.Btn11_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn11_1.Name = "Btn11_1"
@@ -1630,6 +1811,7 @@ Partial Class NivelMedio
         'Btn11_11
         '
         Me.Btn11_11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn11_11.ForeColor = System.Drawing.Color.Black
         Me.Btn11_11.Location = New System.Drawing.Point(800, 677)
         Me.Btn11_11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn11_11.Name = "Btn11_11"
@@ -1642,6 +1824,7 @@ Partial Class NivelMedio
         'Btn5_11
         '
         Me.Btn5_11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn5_11.ForeColor = System.Drawing.Color.Black
         Me.Btn5_11.Location = New System.Drawing.Point(800, 390)
         Me.Btn5_11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn5_11.Name = "Btn5_11"
@@ -1654,6 +1837,7 @@ Partial Class NivelMedio
         'Btn4_11
         '
         Me.Btn4_11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn4_11.ForeColor = System.Drawing.Color.Black
         Me.Btn4_11.Location = New System.Drawing.Point(800, 343)
         Me.Btn4_11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn4_11.Name = "Btn4_11"
@@ -1666,6 +1850,7 @@ Partial Class NivelMedio
         'Btn3_11
         '
         Me.Btn3_11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn3_11.ForeColor = System.Drawing.Color.Black
         Me.Btn3_11.Location = New System.Drawing.Point(800, 298)
         Me.Btn3_11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn3_11.Name = "Btn3_11"
@@ -1678,6 +1863,7 @@ Partial Class NivelMedio
         'Btn2_11
         '
         Me.Btn2_11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn2_11.ForeColor = System.Drawing.Color.Black
         Me.Btn2_11.Location = New System.Drawing.Point(800, 252)
         Me.Btn2_11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn2_11.Name = "Btn2_11"
@@ -1690,6 +1876,7 @@ Partial Class NivelMedio
         'Btn1_11
         '
         Me.Btn1_11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn1_11.ForeColor = System.Drawing.Color.Black
         Me.Btn1_11.Location = New System.Drawing.Point(800, 206)
         Me.Btn1_11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn1_11.Name = "Btn1_11"
@@ -1702,6 +1889,7 @@ Partial Class NivelMedio
         'Btn0_11
         '
         Me.Btn0_11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn0_11.ForeColor = System.Drawing.Color.Black
         Me.Btn0_11.Location = New System.Drawing.Point(800, 138)
         Me.Btn0_11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn0_11.Name = "Btn0_11"
@@ -1714,6 +1902,7 @@ Partial Class NivelMedio
         'Btn0_5
         '
         Me.Btn0_5.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn0_5.ForeColor = System.Drawing.Color.Black
         Me.Btn0_5.Location = New System.Drawing.Point(508, 138)
         Me.Btn0_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn0_5.Name = "Btn0_5"
@@ -1726,6 +1915,7 @@ Partial Class NivelMedio
         'Btn0_4
         '
         Me.Btn0_4.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn0_4.ForeColor = System.Drawing.Color.Black
         Me.Btn0_4.Location = New System.Drawing.Point(463, 138)
         Me.Btn0_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn0_4.Name = "Btn0_4"
@@ -1738,6 +1928,7 @@ Partial Class NivelMedio
         'Btn0_3
         '
         Me.Btn0_3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn0_3.ForeColor = System.Drawing.Color.Black
         Me.Btn0_3.Location = New System.Drawing.Point(415, 138)
         Me.Btn0_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn0_3.Name = "Btn0_3"
@@ -1750,6 +1941,7 @@ Partial Class NivelMedio
         'Btn0_2
         '
         Me.Btn0_2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn0_2.ForeColor = System.Drawing.Color.Black
         Me.Btn0_2.Location = New System.Drawing.Point(369, 138)
         Me.Btn0_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn0_2.Name = "Btn0_2"
@@ -1762,6 +1954,7 @@ Partial Class NivelMedio
         'Btn0_1
         '
         Me.Btn0_1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Btn0_1.ForeColor = System.Drawing.Color.Black
         Me.Btn0_1.Location = New System.Drawing.Point(323, 138)
         Me.Btn0_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn0_1.Name = "Btn0_1"
@@ -1775,6 +1968,7 @@ Partial Class NivelMedio
         '
         Me.Btn1_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn1_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_1.ForeColor = System.Drawing.Color.Black
         Me.Btn1_1.Location = New System.Drawing.Point(324, 205)
         Me.Btn1_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn1_1.Name = "Btn1_1"
@@ -1787,6 +1981,7 @@ Partial Class NivelMedio
         '
         Me.Btn1_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn1_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_2.ForeColor = System.Drawing.Color.Black
         Me.Btn1_2.Location = New System.Drawing.Point(370, 205)
         Me.Btn1_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn1_2.Name = "Btn1_2"
@@ -1799,6 +1994,7 @@ Partial Class NivelMedio
         '
         Me.Btn5_5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn5_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_5.ForeColor = System.Drawing.Color.Black
         Me.Btn5_5.Location = New System.Drawing.Point(509, 389)
         Me.Btn5_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn5_5.Name = "Btn5_5"
@@ -1811,6 +2007,7 @@ Partial Class NivelMedio
         '
         Me.Btn2_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn2_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_1.ForeColor = System.Drawing.Color.Black
         Me.Btn2_1.Location = New System.Drawing.Point(325, 251)
         Me.Btn2_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn2_1.Name = "Btn2_1"
@@ -1823,6 +2020,7 @@ Partial Class NivelMedio
         '
         Me.Btn5_4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn5_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_4.ForeColor = System.Drawing.Color.Black
         Me.Btn5_4.Location = New System.Drawing.Point(462, 389)
         Me.Btn5_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn5_4.Name = "Btn5_4"
@@ -1835,6 +2033,7 @@ Partial Class NivelMedio
         '
         Me.Btn2_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn2_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_2.ForeColor = System.Drawing.Color.Black
         Me.Btn2_2.Location = New System.Drawing.Point(370, 251)
         Me.Btn2_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn2_2.Name = "Btn2_2"
@@ -1847,6 +2046,7 @@ Partial Class NivelMedio
         '
         Me.Btn4_5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn4_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_5.ForeColor = System.Drawing.Color.Black
         Me.Btn4_5.Location = New System.Drawing.Point(509, 342)
         Me.Btn4_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn4_5.Name = "Btn4_5"
@@ -1859,6 +2059,7 @@ Partial Class NivelMedio
         '
         Me.Btn1_3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn1_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_3.ForeColor = System.Drawing.Color.Black
         Me.Btn1_3.Location = New System.Drawing.Point(416, 205)
         Me.Btn1_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn1_3.Name = "Btn1_3"
@@ -1871,6 +2072,7 @@ Partial Class NivelMedio
         '
         Me.Btn4_4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn4_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_4.ForeColor = System.Drawing.Color.Black
         Me.Btn4_4.Location = New System.Drawing.Point(462, 342)
         Me.Btn4_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn4_4.Name = "Btn4_4"
@@ -1883,6 +2085,7 @@ Partial Class NivelMedio
         '
         Me.Btn2_3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn2_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_3.ForeColor = System.Drawing.Color.Black
         Me.Btn2_3.Location = New System.Drawing.Point(416, 251)
         Me.Btn2_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn2_3.Name = "Btn2_3"
@@ -1895,6 +2098,7 @@ Partial Class NivelMedio
         '
         Me.Btn5_3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn5_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_3.ForeColor = System.Drawing.Color.Black
         Me.Btn5_3.Location = New System.Drawing.Point(416, 389)
         Me.Btn5_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn5_3.Name = "Btn5_3"
@@ -1907,6 +2111,7 @@ Partial Class NivelMedio
         '
         Me.Btn3_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn3_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_1.ForeColor = System.Drawing.Color.Black
         Me.Btn3_1.Location = New System.Drawing.Point(325, 297)
         Me.Btn3_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn3_1.Name = "Btn3_1"
@@ -1919,6 +2124,7 @@ Partial Class NivelMedio
         '
         Me.Btn5_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn5_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_2.ForeColor = System.Drawing.Color.Black
         Me.Btn5_2.Location = New System.Drawing.Point(370, 389)
         Me.Btn5_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn5_2.Name = "Btn5_2"
@@ -1931,6 +2137,7 @@ Partial Class NivelMedio
         '
         Me.Btn3_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn3_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_2.ForeColor = System.Drawing.Color.Black
         Me.Btn3_2.Location = New System.Drawing.Point(370, 297)
         Me.Btn3_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn3_2.Name = "Btn3_2"
@@ -1943,6 +2150,7 @@ Partial Class NivelMedio
         '
         Me.Btn5_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn5_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn5_1.ForeColor = System.Drawing.Color.Black
         Me.Btn5_1.Location = New System.Drawing.Point(325, 389)
         Me.Btn5_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn5_1.Name = "Btn5_1"
@@ -1955,6 +2163,7 @@ Partial Class NivelMedio
         '
         Me.Btn3_3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn3_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_3.ForeColor = System.Drawing.Color.Black
         Me.Btn3_3.Location = New System.Drawing.Point(416, 297)
         Me.Btn3_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn3_3.Name = "Btn3_3"
@@ -1967,6 +2176,7 @@ Partial Class NivelMedio
         '
         Me.Btn4_3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn4_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_3.ForeColor = System.Drawing.Color.Black
         Me.Btn4_3.Location = New System.Drawing.Point(416, 342)
         Me.Btn4_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn4_3.Name = "Btn4_3"
@@ -1979,6 +2189,7 @@ Partial Class NivelMedio
         '
         Me.Btn1_4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn1_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_4.ForeColor = System.Drawing.Color.Black
         Me.Btn1_4.Location = New System.Drawing.Point(462, 205)
         Me.Btn1_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn1_4.Name = "Btn1_4"
@@ -1991,6 +2202,7 @@ Partial Class NivelMedio
         '
         Me.Btn4_2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn4_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_2.ForeColor = System.Drawing.Color.Black
         Me.Btn4_2.Location = New System.Drawing.Point(370, 342)
         Me.Btn4_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn4_2.Name = "Btn4_2"
@@ -2003,6 +2215,7 @@ Partial Class NivelMedio
         '
         Me.Btn1_5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn1_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn1_5.ForeColor = System.Drawing.Color.Black
         Me.Btn1_5.Location = New System.Drawing.Point(509, 205)
         Me.Btn1_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn1_5.Name = "Btn1_5"
@@ -2015,6 +2228,7 @@ Partial Class NivelMedio
         '
         Me.Btn4_1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn4_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn4_1.ForeColor = System.Drawing.Color.Black
         Me.Btn4_1.Location = New System.Drawing.Point(325, 342)
         Me.Btn4_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn4_1.Name = "Btn4_1"
@@ -2027,6 +2241,7 @@ Partial Class NivelMedio
         '
         Me.Btn2_4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn2_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_4.ForeColor = System.Drawing.Color.Black
         Me.Btn2_4.Location = New System.Drawing.Point(462, 251)
         Me.Btn2_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn2_4.Name = "Btn2_4"
@@ -2039,6 +2254,7 @@ Partial Class NivelMedio
         '
         Me.Btn3_5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn3_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_5.ForeColor = System.Drawing.Color.Black
         Me.Btn3_5.Location = New System.Drawing.Point(509, 297)
         Me.Btn3_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn3_5.Name = "Btn3_5"
@@ -2051,6 +2267,7 @@ Partial Class NivelMedio
         '
         Me.Btn2_5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn2_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2_5.ForeColor = System.Drawing.Color.Black
         Me.Btn2_5.Location = New System.Drawing.Point(509, 251)
         Me.Btn2_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn2_5.Name = "Btn2_5"
@@ -2063,6 +2280,7 @@ Partial Class NivelMedio
         '
         Me.Btn3_4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Btn3_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn3_4.ForeColor = System.Drawing.Color.Black
         Me.Btn3_4.Location = New System.Drawing.Point(462, 297)
         Me.Btn3_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn3_4.Name = "Btn3_4"
@@ -2155,80 +2373,6 @@ Partial Class NivelMedio
         'TimerMedio
         '
         '
-        'Panel2
-        '
-        Me.Panel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel2.Controls.Add(Me.lblMiliSegs)
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.lblSegs)
-        Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.lblMin)
-        Me.Panel2.ForeColor = System.Drawing.Color.Transparent
-        Me.Panel2.Location = New System.Drawing.Point(343, 113)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(400, 64)
-        Me.Panel2.TabIndex = 339
-        '
-        'lblMiliSegs
-        '
-        Me.lblMiliSegs.AutoSize = True
-        Me.lblMiliSegs.BackColor = System.Drawing.Color.Transparent
-        Me.lblMiliSegs.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMiliSegs.ForeColor = System.Drawing.Color.Silver
-        Me.lblMiliSegs.Location = New System.Drawing.Point(305, 0)
-        Me.lblMiliSegs.Name = "lblMiliSegs"
-        Me.lblMiliSegs.Size = New System.Drawing.Size(92, 56)
-        Me.lblMiliSegs.TabIndex = 53
-        Me.lblMiliSegs.Text = "00"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Silver
-        Me.Label2.Location = New System.Drawing.Point(257, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(42, 56)
-        Me.Label2.TabIndex = 57
-        Me.Label2.Text = ":"
-        '
-        'lblSegs
-        '
-        Me.lblSegs.AutoSize = True
-        Me.lblSegs.BackColor = System.Drawing.Color.Transparent
-        Me.lblSegs.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSegs.ForeColor = System.Drawing.Color.Silver
-        Me.lblSegs.Location = New System.Drawing.Point(159, 0)
-        Me.lblSegs.Name = "lblSegs"
-        Me.lblSegs.Size = New System.Drawing.Size(92, 56)
-        Me.lblSegs.TabIndex = 54
-        Me.lblSegs.Text = "00"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Silver
-        Me.Label3.Location = New System.Drawing.Point(111, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(42, 56)
-        Me.Label3.TabIndex = 56
-        Me.Label3.Text = ":"
-        '
-        'lblMin
-        '
-        Me.lblMin.AutoSize = True
-        Me.lblMin.BackColor = System.Drawing.Color.Transparent
-        Me.lblMin.Font = New System.Drawing.Font("Georgia", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMin.ForeColor = System.Drawing.Color.Silver
-        Me.lblMin.Location = New System.Drawing.Point(13, 1)
-        Me.lblMin.Name = "lblMin"
-        Me.lblMin.Size = New System.Drawing.Size(92, 56)
-        Me.lblMin.TabIndex = 55
-        Me.lblMin.Text = "00"
-        '
         'NivelMedio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -2243,11 +2387,11 @@ Partial Class NivelMedio
         Me.Name = "NivelMedio"
         Me.Text = "NivelMedio"
         Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelSuperior.ResumeLayout(False)
         Me.PanelSuperior.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
